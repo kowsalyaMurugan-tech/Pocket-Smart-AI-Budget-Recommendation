@@ -1,2 +1,3 @@
-# Vetri-Thiran-Payirchi-Thittam
-Ai Augumented Backend Application
+# Pocket Smart AI Budget Recommendation
+Pocket Smart AI Budget Recommendation
+
