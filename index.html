@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PocketSmart AI - AI-Powered Budget Planning for Everyday Needs</title>
+  <meta name="description" content="Intelligent cross-platform budget planning with Gemini AI for home interiors, parties, and occasion jewelry.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+        <span>Pocket<span class="brand-accent">Smart</span></span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#features"><i class="fas fa-th-large"></i> Features</a></li>
+        <li class="nav-item"><a href="#testimonials"><i class="fas fa-comment-dots"></i> Testimonials</a></li>
+        {% if user %}
+          <li class="nav-item"><a href="/dashboard"><i class="fas fa-columns"></i> Dashboard</a></li>
+          <li class="nav-item"><a href="/logout" class="btn-nav-primary"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        {% else %}
+          <li class="nav-item"><a href="/login"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+          <li class="nav-item"><a href="/register" class="btn-nav-primary" id="btn-nav-getstarted">Get Started</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-bolt"></i> Powered by Google Gemini 1.5 & 2.0 Flash
+      </div>
+      <h1 class="hero-title">
+        AI-Powered Budget Planning <span>for Everyday Needs</span>
+      </h1>
+      <p class="hero-description">
+        Make smarter financial decisions with personalized budget recommendations for home interiors,
+        parties, and jewelry purchases. Our AI helps you get the most value for your money across
+        Amazon India, Flipkart, IKEA, Swiggy, Zomato, Tanishq, and more.
+      </p>
+      <div class="hero-actions">
+        {% if user %}
+          <a href="/dashboard" class="btn btn-primary btn-lg" id="hero-btn-dashboard">
+            <i class="fas fa-columns"></i> Go to Dashboard
+          </a>
+        {% else %}
+          <a href="/register" class="btn btn-primary btn-lg" id="hero-btn-getstarted">
+            <i class="fas fa-rocket"></i> Get Started Free
+          </a>
+          <a href="/login" class="btn btn-secondary btn-lg" id="hero-btn-signin">
+            <i class="fas fa-sign-in-alt"></i> Sign In
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container: Features & Planners -->
+  <main class="container" id="features">
+    <div class="section-header">
+      <h2 class="section-title">Our Smart Budget Planners</h2>
+      <p class="section-subtitle">
+        Discover how PocketSmart AI helps you make better financial decisions across different areas of your life.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- 1. Home Interior Planner Card -->
+      <div class="feature-card">
+        <div class="feature-card-header home-theme">
+          <i class="fas fa-couch card-icon-large"></i>
+        </div>
+        <div class="feature-card-body">
+          <h3 class="card-title"><i class="fas fa-home" style="color: #0284c7;"></i> Home Interior Budget Planner</h3>
+          <p class="card-text">
+            Plan your interior design budget efficiently with AI-powered recommendations for furniture,
+            lighting fixtures, ceiling fans, and dining sets tailored to Indian room setups.
+          </p>
+          <a href="/home-planner" class="btn btn-primary btn-block" id="btn-card-home-planner">
+            <i class="fas fa-arrow-right"></i> Launch Planner
+          </a>
+        </div>
+      </div>
+
+      <!-- 2. Party Planner Card -->
+      <div class="feature-card">
+        <div class="feature-card-header party-theme">
+          <i class="fas fa-glass-cheers card-icon-large"></i>
+        </div>
+        <div class="feature-card-body">
+          <h3 class="card-title"><i class="fas fa-birthday-cake" style="color: #c026d3;"></i> Party Budget Planner</h3>
+          <p class="card-text">
+            Plan your perfect event with smart budget allocations for venue, catering, decorations, and
+            entertainment. Compare options across Swiggy, Zomato, OYO, and BookMyShow.
+          </p>
+          <a href="/party-planner" class="btn btn-primary btn-block" id="btn-card-party-planner">
+            <i class="fas fa-arrow-right"></i> Launch Planner
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Jewelry Planner Card -->
+      <div class="feature-card">
+        <div class="feature-card-header jewelry-theme">
+          <i class="fas fa-gem card-icon-large"></i>
+        </div>
+        <div class="feature-card-body">
+          <h3 class="card-title"><i class="fas fa-ring" style="color: #0d9488;"></i> Jewelry Budget Planner</h3>
+          <p class="card-text">
+            Find the ideal jewelry pieces for any occasion that match your outfit and budget. Upload your
+            outfit photo for multimodal AI color analysis and curated links from Tanishq, BlueStone, and CaratLane.
+          </p>
+          <a href="/jewelry-planner" class="btn btn-primary btn-block" id="btn-card-jewelry-planner">
+            <i class="fas fa-arrow-right"></i> Launch Planner
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-header">
+        <h2 class="section-title">What Our Users Say</h2>
+        <p class="section-subtitle">Real experiences from people who have transformed their financial planning with PocketSmart AI.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "PocketSmart AI helped me furnish my new 2BHK apartment in Bengaluru without breaking the bank. The IKEA and Amazon product recommendations were spot on and saved nearly 30% of my initial estimate!"
+          </p>
+          <div class="author-info">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Sarah K.</div>
+              <div class="author-role">Home Owner, Bengaluru</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "Planning my daughter's 10th birthday was so effortless with the Party Planner. The catering and theme decoration breakdown with Swiggy and Amazon links kept us strictly within our ₹15,000 budget."
+          </p>
+          <div class="author-info">
+            <div class="author-avatar">MR</div>
+            <div>
+              <div class="author-name">Michael R.</div>
+              <div class="author-role">Parent & Event Host</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            "The multimodal outfit analyzer is sheer genius! I uploaded my pastel wedding lehenga, and it suggested exact matching rose-gold jewelry from Tanishq and CaratLane well under my budget."
+          </p>
+          <div class="author-info">
+            <div class="author-avatar">PM</div>
+            <div>
+              <div class="author-name">Priya M.</div>
+              <div class="author-role">Fashion Enthusiast, Mumbai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+      <h2>Ready to Optimize Your Budget?</h2>
+      <p>Join PocketSmart today and start making smarter financial decisions across all areas of your life.</p>
+      <div class="cta-buttons">
+        {% if user %}
+          <a href="/dashboard" class="btn btn-primary btn-lg"><i class="fas fa-columns"></i> Open Dashboard</a>
+        {% else %}
+          <a href="/login" class="btn btn-secondary btn-lg" id="cta-btn-signin"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+          <a href="/register" class="btn btn-primary btn-lg" id="cta-btn-createaccount"><i class="fas fa-user-plus"></i> Create Account</a>
+        {% endif %}
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>PocketSmart AI</h3>
+        <p>
+          AI-powered budget planning system to help you make smarter financial decisions every day with Google Gemini.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4>Planners</h4>
+        <ul>
+          <li><a href="/home-planner">Home Interior</a></li>
+          <li><a href="/party-planner">Party & Events</a></li>
+          <li><a href="/jewelry-planner">Jewelry & Fashion</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="https://www.amazon.in" target="_blank" rel="noopener">Amazon India</a></li>
+          <li><a href="https://www.flipkart.com" target="_blank" rel="noopener">Flipkart</a></li>
+          <li><a href="https://www.ikea.com/in/en/" target="_blank" rel="noopener">IKEA India</a></li>
+          <li><a href="https://www.tanishq.co.in" target="_blank" rel="noopener">Tanishq</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Account</h4>
+        <ul>
+          {% if user %}
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/history">History</a></li>
+            <li><a href="/logout">Logout</a></li>
+          {% else %}
+            <li><a href="/login">Sign In</a></li>
+            <li><a href="/register">Create Account</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PocketSmart AI. All rights reserved.</p>
+      <p>Powered by FastAPI & Google Gemini Foundation Models</p>
+    </div>
+  </footer>
+
+</body>
+</html>

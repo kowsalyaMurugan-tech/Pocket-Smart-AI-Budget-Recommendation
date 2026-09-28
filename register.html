@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - PocketSmart AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body style="background: #f1f5f9;">
+
+  <!-- Simple Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+        <span>Pocket<span class="brand-accent">Smart</span></span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="/login" class="btn-nav-primary"><i class="fas fa-sign-in-alt"></i> Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Auth Box -->
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="brand-logo" style="justify-content: center; color: var(--primary-navy); margin-bottom: 0.25rem;">
+          <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+          <span>Pocket<span style="color: var(--accent-blue);">Smart</span></span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">AI-Powered Budget Planning</p>
+        <h2 class="auth-title">Create Your Account</h2>
+      </div>
+
+      {% if error %}
+        <div style="background-color: #fee2e2; border: 1px solid #fecaca; color: #dc2626; padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.88rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;" id="register-error-alert">
+          <i class="fas fa-exclamation-circle"></i>
+          <span>{{ error }}</span>
+        </div>
+      {% endif %}
+
+      <form action="/register" method="POST" id="register-form">
+        <div class="form-group">
+          <label class="form-label" for="username">Username</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Choose a username" required autofocus>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Create a strong password" required minlength="4">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="confirm_password">Confirm Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-check-circle input-icon"></i>
+            <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirm your password" required minlength="4">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit-register" style="margin-top: 1.5rem;">
+          <i class="fas fa-user-plus"></i> Create Account
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 1.75rem; font-size: 0.92rem; color: var(--text-muted);">
+        Already have an account? <a href="/login" style="color: var(--accent-blue); font-weight: 600;" id="link-goto-login">Sign In</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

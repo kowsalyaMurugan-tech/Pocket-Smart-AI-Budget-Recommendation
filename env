@@ -1,0 +1,9 @@
+# Google Gemini API Key
+# Replace with your actual Gemini API key from https://aistudio.google.com/
+GOOGLE_API_KEY=
+GEMINI_API_KEY=
+
+# Application Security
+SECRET_KEY=pocketsmart_ai_super_secret_jwt_key_2026_secure
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60

@@ -1,0 +1,32 @@
+{
+  "demo": {
+    "username": "demo",
+    "email": "demo@pocketsmart.ai",
+    "full_name": "Demo User",
+    "hashed_password": "$2b$12$SqZA4VVkwVIXlQFdvTkks.85GFK4Kyr4b4t6XQ/JkbVL9.ro8NGyW"
+  },
+  "tester1": {
+    "username": "tester1",
+    "email": "tester1@example.com",
+    "full_name": "Test User",
+    "hashed_password": "$2b$12$STYc5mwAG26iNETrsb9ZQOpqs21mGpF1oYWuIMK32cbQkNIREubkS"
+  },
+  "user123": {
+    "username": "user123",
+    "email": "user@example.com",
+    "full_name": "User123",
+    "hashed_password": "$2b$12$OT7/eslvfWzAQgVTcr4LTOGesVbj5Gp6.x0fMrTZejsVCFQF3lRMe"
+  },
+  "tester_80aea7": {
+    "username": "tester_80aea7",
+    "email": "tester_80aea7@example.com",
+    "full_name": "Test User",
+    "hashed_password": "$2b$12$OyesbD3LwjC1muePTD570ewsImEa2XcgQ0ygDiBDPGg3iW/UoZkFm"
+  },
+  "eswar": {
+    "username": "eswar",
+    "email": "eswarsathishkumar@gmail.com",
+    "full_name": "Eswar",
+    "hashed_password": "$2b$12$WQl3PjYCt46a79TCUm59Y.jhV53A3WAv/.bXODx7hcagIxpwOrdfi"
+  }
+}

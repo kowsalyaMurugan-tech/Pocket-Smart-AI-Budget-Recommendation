@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jewelry Budget Planner - PocketSmart AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+        <span>Pocket<span class="brand-accent">Smart</span></span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/dashboard"><i class="fas fa-columns"></i> Dashboard</a></li>
+        <li class="nav-item"><a href="/home-planner"><i class="fas fa-home"></i> Home Planner</a></li>
+        <li class="nav-item"><a href="/party-planner"><i class="fas fa-glass-cheers"></i> Party Planner</a></li>
+        <li class="nav-item active"><a href="/jewelry-planner"><i class="fas fa-gem"></i> Jewelry Planner</a></li>
+        <li class="nav-item"><a href="/history"><i class="fas fa-history"></i> History</a></li>
+        <li class="nav-item"><a href="/logout" class="btn-nav-primary"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="container">
+    <div class="planner-page-header">
+      <h1 class="planner-page-title">Jewelry Budget Planner</h1>
+      <p class="planner-page-subtitle">Get AI-powered jewelry recommendations within your budget for any occasion</p>
+    </div>
+
+    <!-- Planner Input Form -->
+    <div class="form-card" id="jewelry-planner-form-card">
+      <form id="jewelry-planner-form">
+        <!-- 1. Budget Details -->
+        <div class="form-section-title">
+          <i class="fas fa-rupee-sign" style="color: var(--accent-blue);"></i> Budget Details
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="total_budget">Total Budget (₹)</label>
+          <div class="input-with-icon">
+            <i class="fas fa-wallet input-icon"></i>
+            <input type="number" id="total_budget" name="total_budget" class="form-control" placeholder="e.g. 5000" min="500" step="500" required value="5000">
+          </div>
+        </div>
+
+        <!-- 2. Occasion & Preferences -->
+        <div class="form-section-title" style="margin-top: 1.75rem;">
+          <i class="fas fa-calendar-check" style="color: var(--accent-blue);"></i> Occasion & Preferences
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="occasion"><i class="fas fa-glass-cheers" style="color: var(--accent-rose);"></i> Occasion</label>
+          <input type="text" id="occasion" name="occasion" class="form-control" placeholder="e.g. Wedding, Birthday, Festive Party, Office Dinner" required value="Birthday">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="preferences"><i class="fas fa-heart" style="color: #ec4899;"></i> Style Preferences</label>
+          <textarea id="preferences" name="preferences" class="form-control" placeholder="Describe your style preferences, metals (gold, silver, rose gold), gemstones, minimalism, ethnic, modern..."></textarea>
+        </div>
+
+        <!-- 3. Upload Outfit Image -->
+        <div class="form-section-title" style="margin-top: 1.75rem;">
+          <i class="fas fa-camera" style="color: var(--accent-blue);"></i> Upload Outfit Image (Optional Multimodal Analysis)
+        </div>
+        <div class="upload-zone" id="upload-zone">
+          <i class="fas fa-cloud-upload-alt upload-icon"></i>
+          <h4 style="font-weight: 700; color: var(--primary-navy); margin-bottom: 0.3rem;">Choose an outfit photo or drag & drop here</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Supports JPG, PNG, WEBP (Gemini multimodal color & style matching)</p>
+          <input type="file" id="outfit_image" name="image" accept="image/*" style="display: none;">
+        </div>
+
+        <!-- Preview Container -->
+        <div class="upload-preview-container" id="upload-preview-container" style="display: none;">
+          <img id="preview-image" src="" alt="Outfit preview" class="upload-preview-img">
+          <div style="flex: 1;">
+            <div style="font-weight: 700; font-size: 0.95rem; color: var(--primary-navy);" id="preview-filename">outfit.jpg</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);" id="preview-filesize">0 KB</div>
+          </div>
+          <button type="button" class="btn btn-secondary" id="btn-remove-image" style="background: #e2e8f0; color: #475569; padding: 0.4rem 0.8rem; font-size: 0.85rem;">
+            <i class="fas fa-trash-alt"></i> Remove Image
+          </button>
+        </div>
+
+        <!-- Submit Button -->
+        <div style="margin-top: 2rem; text-align: center;">
+          <button type="submit" class="btn btn-primary btn-lg" id="btn-submit-jewelry-planner" style="min-width: 280px;">
+            <i class="fas fa-gem"></i> Get Recommendations
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Spinner Loading State -->
+    <div class="spinner-container" id="loading-spinner">
+      <div class="spinner"></div>
+      <h3 style="color: var(--primary-navy); font-weight: 700;">Gemini Multimodal AI is analyzing your outfit & budget...</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.3rem;">Matching colors and coordinating jewelry options from Tanishq, CaratLane, BlueStone & Melorra.</p>
+    </div>
+
+    <!-- Results Area -->
+    <div class="results-container" id="results-area" style="display: none;">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <span class="hero-badge" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); color: #059669;">
+          <i class="fas fa-check-circle"></i> AI Recommendation Ready
+        </span>
+        <h2 class="section-title" style="margin-top: 0.5rem;">Your Personalized Jewelry Recommendations</h2>
+      </div>
+
+      <!-- Budget Summary Card -->
+      <div class="budget-summary-card">
+        <div class="summary-stat">
+          <div class="summary-label">Total Budget</div>
+          <div class="summary-value text-blue" id="res-total-budget">₹0.00</div>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-label">Total Spent</div>
+          <div class="summary-value text-amber" id="res-total-spent">₹0.00</div>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-label">Remaining Budget</div>
+          <div class="summary-value text-green" id="res-remaining-budget">₹0.00</div>
+        </div>
+      </div>
+
+      <!-- Outfit Analysis Card -->
+      <div class="analysis-card" id="outfit-analysis-card">
+        <div style="display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: #1e40af; margin-bottom: 0.75rem; font-size: 1.1rem;">
+          <i class="fas fa-palette"></i> Outfit Analysis
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center;">
+          <div id="res-uploaded-img-wrapper" style="display: none;">
+            <img id="res-uploaded-img" src="" alt="Analyzed Outfit" style="width: 80px; height: 80px; border-radius: 8px; object-fit: cover; border: 2px solid #bfdbfe;">
+          </div>
+          <div>
+            <div style="margin-bottom: 0.4rem;">
+              <strong style="color: #1e3a8a; font-size: 0.9rem;">Colors:</strong>
+              <span id="res-colors-badges"></span>
+            </div>
+            <div style="margin-bottom: 0.4rem;">
+              <strong style="color: #1e3a8a; font-size: 0.9rem;">Style:</strong>
+              <span id="res-style-badge"></span>
+            </div>
+            <div>
+              <strong style="color: #1e3a8a; font-size: 0.9rem;">Formality:</strong>
+              <span id="res-formality-badge"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jewelry Recommendations Container -->
+      <div class="category-card">
+        <div class="category-header">
+          <div class="category-title">
+            <i class="fas fa-gem" style="color: #0d9488;"></i> Recommended Jewelry Pieces
+          </div>
+          <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Direct Indian retailer links</span>
+        </div>
+        <div id="res-jewelry-items-list" style="display: flex; flex-direction: column; gap: 1.25rem;"></div>
+      </div>
+
+      <!-- Styling Tips Card -->
+      <div class="tips-card" id="tips-card">
+        <div class="tips-title">
+          <i class="fas fa-magic"></i> Expert Styling Tips
+        </div>
+        <ul class="tips-list" id="res-styling-tips-list"></ul>
+      </div>
+
+      <!-- Action Buttons below results -->
+      <div style="text-align: center; margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <button onclick="window.print()" class="btn btn-secondary" style="background: #334155;">
+          <i class="fas fa-print"></i> Print Recommendations
+        </button>
+        <a href="/history" class="btn btn-outline">
+          <i class="fas fa-history"></i> View in Saved History
+        </a>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn btn-primary">
+          <i class="fas fa-redo"></i> Plan Another Outfit
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bottom" style="border-top: none; padding-top: 0; text-align: center; justify-content: center;">
+      <p>© 2026 PocketSmart AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // File upload preview handling
+    const uploadZone = document.getElementById('upload-zone');
+    const fileInput = document.getElementById('outfit_image');
+    const previewContainer = document.getElementById('upload-preview-container');
+    const previewImg = document.getElementById('preview-image');
+    const previewFilename = document.getElementById('preview-filename');
+    const previewFilesize = document.getElementById('preview-filesize');
+    const btnRemoveImage = document.getElementById('btn-remove-image');
+
+    uploadZone.addEventListener('click', () => fileInput.click());
+
+    uploadZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      uploadZone.classList.add('dragover');
+    });
+
+    uploadZone.addEventListener('dragleave', () => {
+      uploadZone.classList.remove('dragover');
+    });
+
+    uploadZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      uploadZone.classList.remove('dragover');
+      if (e.dataTransfer.files.length) {
+        fileInput.files = e.dataTransfer.files;
+        handleFileSelect(e.dataTransfer.files[0]);
+      }
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files.length) {
+        handleFileSelect(e.target.files[0]);
+      }
+    });
+
+    btnRemoveImage.addEventListener('click', () => {
+      fileInput.value = '';
+      previewContainer.style.display = 'none';
+      uploadZone.style.display = 'block';
+    });
+
+    function handleFileSelect(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        previewImg.src = e.target.result;
+        previewFilename.textContent = file.name;
+        previewFilesize.textContent = (file.size / 1024).toFixed(1) + ' KB';
+        previewContainer.style.display = 'flex';
+        uploadZone.style.display = 'none';
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // Form Submission
+    document.getElementById('jewelry-planner-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('btn-submit-jewelry-planner');
+      const spinner = document.getElementById('loading-spinner');
+      const resultsArea = document.getElementById('results-area');
+
+      const formData = new FormData();
+      formData.append('total_budget', document.getElementById('total_budget').value);
+      formData.append('occasion', document.getElementById('occasion').value);
+      formData.append('preferences', document.getElementById('preferences').value);
+
+      if (fileInput.files.length > 0) {
+        formData.append('image', fileInput.files[0]);
+      }
+
+      submitBtn.disabled = true;
+      spinner.style.display = 'block';
+      resultsArea.style.display = 'none';
+
+      try {
+        const response = await fetch('/jewelry-budget', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (!response.ok) {
+          const err = await response.json();
+          throw new Error(err.detail || 'Failed to generate jewelry recommendations');
+        }
+
+        const data = await response.json();
+        renderJewelryResults(data);
+
+        spinner.style.display = 'none';
+        resultsArea.style.display = 'block';
+        resultsArea.scrollIntoView({ behavior: 'smooth' });
+      } catch (err) {
+        spinner.style.display = 'none';
+        alert('Notice: ' + err.message);
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+
+    function renderJewelryResults(data) {
+      document.getElementById('res-total-budget').textContent = `₹${Number(data.total_budget || 0).toLocaleString('en-IN', {minimumFractionDigits: 2})}`;
+      document.getElementById('res-total-spent').textContent = `₹${Number(data.total_spent || 0).toLocaleString('en-IN', {minimumFractionDigits: 2})}`;
+      document.getElementById('res-remaining-budget').textContent = `₹${Number(data.remaining_budget || 0).toLocaleString('en-IN', {minimumFractionDigits: 2})}`;
+
+      // Uploaded image thumbnail in analysis
+      const imgWrapper = document.getElementById('res-uploaded-img-wrapper');
+      const resImg = document.getElementById('res-uploaded-img');
+      if (data.uploaded_image_url) {
+        resImg.src = data.uploaded_image_url;
+        imgWrapper.style.display = 'block';
+      } else {
+        imgWrapper.style.display = 'none';
+      }
+
+      // Outfit Analysis Badges
+      const analysis = data.outfit_analysis || {};
+      const colorsBadges = document.getElementById('res-colors-badges');
+      colorsBadges.innerHTML = '';
+      (analysis.colors || ['Custom Palette']).forEach(c => {
+        const span = document.createElement('span');
+        span.className = 'badge-tag tag-blue';
+        span.textContent = c;
+        colorsBadges.appendChild(span);
+      });
+
+      const styleBadge = document.getElementById('res-style-badge');
+      styleBadge.innerHTML = `<span class="badge-tag tag-purple">${analysis.style || 'Contemporary Elegance'}</span>`;
+
+      const formalityBadge = document.getElementById('res-formality-badge');
+      formalityBadge.innerHTML = `<span class="badge-tag tag-emerald">${analysis.formality || 'Semi-Formal'}</span>`;
+
+      // Jewelry Items List
+      const itemsList = document.getElementById('res-jewelry-items-list');
+      itemsList.innerHTML = '';
+
+      (data.jewelry_recommendations || []).forEach(item => {
+        const links = item.shopping_links || {};
+        let linkBtns = '';
+
+        if (links.tanishq) linkBtns += `<a href="${links.tanishq}" target="_blank" class="store-btn tanishq"><i class="fas fa-gem"></i> Tanishq</a>`;
+        if (links.bluestone) linkBtns += `<a href="${links.bluestone}" target="_blank" class="store-btn bluestone"><i class="fas fa-ring"></i> BlueStone</a>`;
+        if (links.caratlane) linkBtns += `<a href="${links.caratlane}" target="_blank" class="store-btn caratlane"><i class="fas fa-sparkles"></i> CaratLane</a>`;
+        if (links.melorra) linkBtns += `<a href="${links.melorra}" target="_blank" class="store-btn melorra"><i class="fas fa-magic"></i> Melorra</a>`;
+        if (links.amazon) linkBtns += `<a href="${links.amazon}" target="_blank" class="store-btn amazon"><i class="fab fa-amazon"></i> Amazon</a>`;
+        if (links.flipkart) linkBtns += `<a href="${links.flipkart}" target="_blank" class="store-btn flipkart"><i class="fas fa-shopping-bag"></i> Flipkart</a>`;
+        if (links.meesho) linkBtns += `<a href="${links.meesho}" target="_blank" class="store-btn meesho"><i class="fas fa-tag"></i> Meesho</a>`;
+
+        const row = document.createElement('div');
+        row.style.cssText = 'padding: 1.25rem; background: #f8fafc; border: 1.5px solid var(--border-color); border-radius: var(--radius-md); display: flex; flex-direction: column; gap: 0.75rem;';
+        row.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #0d9488;"></span>
+                <span style="font-weight: 800; font-size: 1.15rem; color: var(--primary-navy); text-transform: capitalize;">${item.item_type || 'Jewelry Piece'}</span>
+                <span class="badge-tag tag-purple" style="font-size: 0.75rem;">${item.style || 'Elegant'}</span>
+              </div>
+              <p style="font-size: 0.92rem; color: #334155; margin-top: 0.35rem; line-height: 1.5;">${item.description || ''}</p>
+            </div>
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800; color: var(--accent-blue); background: #eff6ff; padding: 0.3rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid #bfdbfe;">
+                ₹${Number(item.estimated_price || 0).toLocaleString('en-IN')}
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.5px;">Shop For This:</div>
+            <div class="shopping-links-cluster">${linkBtns}</div>
+          </div>
+        `;
+        itemsList.appendChild(row);
+      });
+
+      // Styling Tips
+      const tipsList = document.getElementById('res-styling-tips-list');
+      tipsList.innerHTML = '';
+      (data.styling_tips || []).forEach(tip => {
+        const li = document.createElement('li');
+        li.textContent = tip;
+        tipsList.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>

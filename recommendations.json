@@ -1,0 +1,3209 @@
+{
+  "demo": [
+    {
+      "id": "rec-22adeb05",
+      "timestamp": "Sep 28, 2026, 11:10 AM",
+      "recommendation_type": "jewelry",
+      "input_summary": "\u20b911,000 for Birthday Occasion Jewelry",
+      "budget": 11000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 11000.0,
+        "occasion": "Birthday",
+        "preferences": null
+      },
+      "full_result": {
+        "outfit_analysis": {
+          "colors": [
+            "Royal Blue",
+            "Gold Accent"
+          ],
+          "style": "Birthday Elegant Occasion Wear",
+          "formality": "Festive / Semi-Formal"
+        },
+        "total_budget": 11000.0,
+        "jewelry_recommendations": [
+          {
+            "item_type": "Necklace / Pendant",
+            "description": "Refined pendant necklace coordinated with Royal Blue accents and Birthday mood.",
+            "style": "Graceful Silhouette",
+            "estimated_price": 3850.0,
+            "search_terms": "CaratLane Tanishq gold accent necklace pendant",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant"
+            }
+          },
+          {
+            "item_type": "Bracelet",
+            "description": "Contemporary adjustable link bracelet with subtle stone highlights.",
+            "style": "Modern Sparkle",
+            "estimated_price": 2750.0,
+            "search_terms": "BlueStone Melorra rose gold bracelet",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=BlueStone+Melorra+rose+gold+bracelet",
+              "flipkart": "https://www.flipkart.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "bluestone": "https://www.bluestone.com/search.html?query=BlueStone+Melorra+rose+gold+bracelet",
+              "tanishq": "https://www.tanishq.co.in/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "caratlane": "https://www.caratlane.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "melorra": "https://www.melorra.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "meesho": "https://www.meesho.com/search?q=BlueStone+Melorra+rose+gold+bracelet"
+            }
+          },
+          {
+            "item_type": "Watch",
+            "description": "Sleek designer dial watch featuring metallic strap that complements your jewelry.",
+            "style": "Sophisticated Luxury",
+            "estimated_price": 2750.0,
+            "search_terms": "Titan Fastrack women designer analog watch",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=Titan+Fastrack+women+designer+analog+watch",
+              "flipkart": "https://www.flipkart.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "bluestone": "https://www.bluestone.com/search.html?query=Titan+Fastrack+women+designer+analog+watch",
+              "tanishq": "https://www.tanishq.co.in/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "caratlane": "https://www.caratlane.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "melorra": "https://www.melorra.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "meesho": "https://www.meesho.com/search?q=Titan+Fastrack+women+designer+analog+watch"
+            }
+          },
+          {
+            "item_type": "Ring",
+            "description": "Minimalist solitaire or dual-band stackable ring for everyday sparkle.",
+            "style": "Contemporary Chic",
+            "estimated_price": 1650.0,
+            "search_terms": "CaratLane silver zirconia stackable ring",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+silver+zirconia+stackable+ring",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+silver+zirconia+stackable+ring",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+silver+zirconia+stackable+ring"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "styling_tips": [
+          "Harmonize your jewelry with the Royal Blue, Gold Accent tones of your attire.",
+          "Choose a statement piece (either necklace or earrings) as the focal visual highlight.",
+          "Layer delicate rings and bracelets for an effortlessly modern look."
+        ],
+        "total_spent": 11000.0
+      }
+    },
+    {
+      "id": "rec-812e3e74",
+      "timestamp": "Sep 27, 2026, 08:12 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b953,500 for Living, Bed, Kitchen (8 lights, 6 fans)",
+      "budget": 53500.0,
+      "remaining": 2675.06,
+      "input_data": {
+        "total_budget": 53500.0,
+        "num_lights": 8,
+        "num_fans": 6,
+        "num_furniture": 4,
+        "num_dining_tables": 3,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": ""
+      },
+      "full_result": {
+        "total_budget": 53500.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 8024.96,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1003.12,
+                "quantity": 8,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 10699.98,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 1783.33,
+                "quantity": 6,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 24075.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 6018.75,
+                "quantity": 4,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 8025.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 2675.0,
+                "quantity": 3,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 8,
+            "total_cost": 8024.96,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 6,
+            "total_cost": 10699.98,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 4,
+            "total_cost": 24075.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 3,
+            "total_cost": 8025.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 2675.06,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 50824.94
+      }
+    },
+    {
+      "id": "rec-a5fd05bd",
+      "timestamp": "Sep 27, 2026, 08:11 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b960,000 for Farewell (68 guests at Banquet Hall)",
+      "budget": 60000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 60000.0,
+        "num_guests": 68,
+        "party_type": "Farewell",
+        "venue_type": "Banquet Hall",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": ""
+      },
+      "full_result": {
+        "total_budget": 60000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 11428.57,
+            "items": [
+              {
+                "name": "Banquet Hall Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 68 guests.",
+                "estimated_price": 11428.57,
+                "quantity": 1,
+                "search_terms": "Banquet Hall party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Banquet+Hall+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Banquet+Hall+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 28571.56,
+            "items": [
+              {
+                "name": "Farewell Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9420.17/head).",
+                "estimated_price": 420.17,
+                "quantity": 68,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 8571.43,
+            "items": [
+              {
+                "name": "Farewell Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 8571.43,
+                "quantity": 1,
+                "search_terms": "Farewell party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Farewell+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Farewell+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Farewell+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Farewell+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 8571.43,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 8571.43,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 2857.14,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 2857.14,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Banquet Hall Celebration Hall",
+            "type": "Banquet Hall",
+            "capacity": 68,
+            "estimated_cost": 11428.57,
+            "search_terms": "Banquet Hall party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Banquet+Hall+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Banquet+Hall+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 60000.13,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 11428.57,
+            "percentage_of_budget": 19.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 68,
+            "total_cost": 28571.56,
+            "percentage_of_budget": 47.6
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 8571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 8571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 2857.14,
+            "percentage_of_budget": 4.8
+          }
+        ],
+        "recommendation_id": "rec-a5fd05bd"
+      }
+    },
+    {
+      "id": "rec-99e3c090",
+      "timestamp": "Sep 27, 2026, 08:10 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b920,000 for Birthday (15 guests at Home)",
+      "budget": 20000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 20000.0,
+        "num_guests": 15,
+        "party_type": "Birthday",
+        "venue_type": "Home",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": ""
+      },
+      "full_result": {
+        "total_budget": 20000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 1000.0,
+            "items": [
+              {
+                "name": "Home Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 15 guests.",
+                "estimated_price": 1000.0,
+                "quantity": 1,
+                "search_terms": "Home party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Home+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Home+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Home+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Home+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Home+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 10000.05,
+            "items": [
+              {
+                "name": "Birthday Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9666.67/head).",
+                "estimated_price": 666.67,
+                "quantity": 15,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 3000.0,
+            "items": [
+              {
+                "name": "Birthday Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 3000.0,
+                "quantity": 1,
+                "search_terms": "Birthday party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Birthday+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Birthday+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 3000.0,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 3000.0,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 3000.0,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 3000.0,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Home Celebration Hall",
+            "type": "Home",
+            "capacity": 15,
+            "estimated_cost": 1000.0,
+            "search_terms": "Home party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Home+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Home+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Home+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Home+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Home+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 20000.05,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 1000.0,
+            "percentage_of_budget": 5.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 15,
+            "total_cost": 10000.05,
+            "percentage_of_budget": 50.0
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 3000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 3000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 3000.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "recommendation_id": "rec-99e3c090"
+      }
+    },
+    {
+      "id": "rec-6d348b4d",
+      "timestamp": "Sep 27, 2026, 08:09 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b950,000 for Living, Bed, Kitchen (5 lights, 4 fans)",
+      "budget": 50000.0,
+      "remaining": 2500.0,
+      "input_data": {
+        "total_budget": 50000.0,
+        "num_lights": 5,
+        "num_fans": 4,
+        "num_furniture": 2,
+        "num_dining_tables": 1,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": ""
+      },
+      "full_result": {
+        "total_budget": 50000.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 7500.0,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1500.0,
+                "quantity": 5,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 10000.0,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 2500.0,
+                "quantity": 4,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 22500.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 11250.0,
+                "quantity": 2,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 7500.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 7500.0,
+                "quantity": 1,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 5,
+            "total_cost": 7500.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 4,
+            "total_cost": 10000.0,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 2,
+            "total_cost": 22500.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 1,
+            "total_cost": 7500.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 2500.0,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 47500.0,
+        "recommendation_id": "rec-6d348b4d"
+      }
+    },
+    {
+      "id": "rec-55c717b9",
+      "timestamp": "Sep 26, 2026, 02:22 PM",
+      "recommendation_type": "jewelry",
+      "input_summary": "\u20b915,000 for Wedding Reception Occasion Jewelry",
+      "budget": 15000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 15000.0,
+        "occasion": "Wedding Reception",
+        "preferences": "Rose gold minimal design with zirconia"
+      },
+      "full_result": {
+        "outfit_analysis": {
+          "colors": [
+            "Royal Blue",
+            "Gold Accent"
+          ],
+          "style": "Wedding Reception Elegant Occasion Wear",
+          "formality": "Festive / Semi-Formal"
+        },
+        "total_budget": 15000.0,
+        "jewelry_recommendations": [
+          {
+            "item_type": "Necklace / Pendant",
+            "description": "Refined pendant necklace coordinated with Royal Blue accents and Wedding Reception mood.",
+            "style": "Graceful Silhouette",
+            "estimated_price": 5250.0,
+            "search_terms": "CaratLane Tanishq gold accent necklace pendant",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant"
+            }
+          },
+          {
+            "item_type": "Bracelet",
+            "description": "Contemporary adjustable link bracelet with subtle stone highlights.",
+            "style": "Modern Sparkle",
+            "estimated_price": 3750.0,
+            "search_terms": "BlueStone Melorra rose gold bracelet",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=BlueStone+Melorra+rose+gold+bracelet",
+              "flipkart": "https://www.flipkart.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "bluestone": "https://www.bluestone.com/search.html?query=BlueStone+Melorra+rose+gold+bracelet",
+              "tanishq": "https://www.tanishq.co.in/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "caratlane": "https://www.caratlane.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "melorra": "https://www.melorra.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "meesho": "https://www.meesho.com/search?q=BlueStone+Melorra+rose+gold+bracelet"
+            }
+          },
+          {
+            "item_type": "Watch",
+            "description": "Sleek designer dial watch featuring metallic strap that complements your jewelry.",
+            "style": "Sophisticated Luxury",
+            "estimated_price": 3750.0,
+            "search_terms": "Titan Fastrack women designer analog watch",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=Titan+Fastrack+women+designer+analog+watch",
+              "flipkart": "https://www.flipkart.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "bluestone": "https://www.bluestone.com/search.html?query=Titan+Fastrack+women+designer+analog+watch",
+              "tanishq": "https://www.tanishq.co.in/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "caratlane": "https://www.caratlane.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "melorra": "https://www.melorra.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "meesho": "https://www.meesho.com/search?q=Titan+Fastrack+women+designer+analog+watch"
+            }
+          },
+          {
+            "item_type": "Ring",
+            "description": "Minimalist solitaire or dual-band stackable ring for everyday sparkle.",
+            "style": "Contemporary Chic",
+            "estimated_price": 2250.0,
+            "search_terms": "CaratLane silver zirconia stackable ring",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+silver+zirconia+stackable+ring",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+silver+zirconia+stackable+ring",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+silver+zirconia+stackable+ring"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "styling_tips": [
+          "Harmonize your jewelry with the Royal Blue, Gold Accent tones of your attire.",
+          "Choose a statement piece (either necklace or earrings) as the focal visual highlight.",
+          "Layer delicate rings and bracelets for an effortlessly modern look."
+        ],
+        "total_spent": 15000.0
+      }
+    },
+    {
+      "id": "rec-3bc461a8",
+      "timestamp": "Sep 26, 2026, 02:22 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b925,000 for Birthday (20 guests at Banquet Hall)",
+      "budget": 25000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 25000.0,
+        "num_guests": 20,
+        "party_type": "Birthday",
+        "venue_type": "Banquet Hall",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": "Vegetarian buffet and retro balloon theme"
+      },
+      "full_result": {
+        "total_budget": 25000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 4761.9,
+            "items": [
+              {
+                "name": "Banquet Hall Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 20 guests.",
+                "estimated_price": 4761.9,
+                "quantity": 1,
+                "search_terms": "Banquet Hall party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Banquet+Hall+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Banquet+Hall+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 11904.8,
+            "items": [
+              {
+                "name": "Birthday Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9595.24/head).",
+                "estimated_price": 595.24,
+                "quantity": 20,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Birthday Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Birthday party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Birthday+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Birthday+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 1190.48,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 1190.48,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Banquet Hall Celebration Hall",
+            "type": "Banquet Hall",
+            "capacity": 20,
+            "estimated_cost": 4761.9,
+            "search_terms": "Banquet Hall party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Banquet+Hall+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Banquet+Hall+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 25000.04,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 4761.9,
+            "percentage_of_budget": 19.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 20,
+            "total_cost": 11904.8,
+            "percentage_of_budget": 47.6
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 1190.48,
+            "percentage_of_budget": 4.8
+          }
+        ],
+        "recommendation_id": "rec-3bc461a8"
+      }
+    },
+    {
+      "id": "rec-01f24299",
+      "timestamp": "Sep 26, 2026, 02:22 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b960,000 for Living, Bed, Kitchen (6 lights, 3 fans)",
+      "budget": 60000.0,
+      "remaining": 3000.0,
+      "input_data": {
+        "total_budget": 60000.0,
+        "num_lights": 6,
+        "num_fans": 3,
+        "num_furniture": 2,
+        "num_dining_tables": 1,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": "Warm contemporary wooden aesthetic"
+      },
+      "full_result": {
+        "total_budget": 60000.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1500.0,
+                "quantity": 6,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 12000.0,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 4000.0,
+                "quantity": 3,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 27000.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 13500.0,
+                "quantity": 2,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 9000.0,
+                "quantity": 1,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 6,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 3,
+            "total_cost": 12000.0,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 2,
+            "total_cost": 27000.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 1,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 3000.0,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 57000.0,
+        "recommendation_id": "rec-01f24299"
+      }
+    },
+    {
+      "id": "rec-dc33fa7c",
+      "timestamp": "Sep 26, 2026, 02:10 PM",
+      "recommendation_type": "jewelry",
+      "input_summary": "\u20b98,000 for Wedding Reception Occasion Jewelry",
+      "budget": 8000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 8000.0,
+        "occasion": "Wedding Reception",
+        "preferences": "Gold accents"
+      },
+      "full_result": {
+        "outfit_analysis": {
+          "colors": [
+            "Royal Blue",
+            "Gold Accent"
+          ],
+          "style": "Wedding Reception Elegant Occasion Wear",
+          "formality": "Festive / Semi-Formal"
+        },
+        "total_budget": 8000.0,
+        "jewelry_recommendations": [
+          {
+            "item_type": "Necklace / Pendant",
+            "description": "Refined pendant necklace coordinated with Royal Blue accents and Wedding Reception mood.",
+            "style": "Graceful Silhouette",
+            "estimated_price": 2800.0,
+            "search_terms": "CaratLane Tanishq gold accent necklace pendant",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant"
+            }
+          },
+          {
+            "item_type": "Bracelet",
+            "description": "Contemporary adjustable link bracelet with subtle stone highlights.",
+            "style": "Modern Sparkle",
+            "estimated_price": 2000.0,
+            "search_terms": "BlueStone Melorra rose gold bracelet",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=BlueStone+Melorra+rose+gold+bracelet",
+              "flipkart": "https://www.flipkart.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "bluestone": "https://www.bluestone.com/search.html?query=BlueStone+Melorra+rose+gold+bracelet",
+              "tanishq": "https://www.tanishq.co.in/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "caratlane": "https://www.caratlane.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "melorra": "https://www.melorra.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "meesho": "https://www.meesho.com/search?q=BlueStone+Melorra+rose+gold+bracelet"
+            }
+          },
+          {
+            "item_type": "Watch",
+            "description": "Sleek designer dial watch featuring metallic strap that complements your jewelry.",
+            "style": "Sophisticated Luxury",
+            "estimated_price": 2000.0,
+            "search_terms": "Titan Fastrack women designer analog watch",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=Titan+Fastrack+women+designer+analog+watch",
+              "flipkart": "https://www.flipkart.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "bluestone": "https://www.bluestone.com/search.html?query=Titan+Fastrack+women+designer+analog+watch",
+              "tanishq": "https://www.tanishq.co.in/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "caratlane": "https://www.caratlane.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "melorra": "https://www.melorra.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "meesho": "https://www.meesho.com/search?q=Titan+Fastrack+women+designer+analog+watch"
+            }
+          },
+          {
+            "item_type": "Ring",
+            "description": "Minimalist solitaire or dual-band stackable ring for everyday sparkle.",
+            "style": "Contemporary Chic",
+            "estimated_price": 1200.0,
+            "search_terms": "CaratLane silver zirconia stackable ring",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+silver+zirconia+stackable+ring",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+silver+zirconia+stackable+ring",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+silver+zirconia+stackable+ring"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "styling_tips": [
+          "Harmonize your jewelry with the Royal Blue, Gold Accent tones of your attire.",
+          "Choose a statement piece (either necklace or earrings) as the focal visual highlight.",
+          "Layer delicate rings and bracelets for an effortlessly modern look."
+        ],
+        "total_spent": 8000.0
+      }
+    },
+    {
+      "id": "rec-010fda80",
+      "timestamp": "Sep 26, 2026, 02:10 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b920,000 for Birthday (15 guests at Home)",
+      "budget": 20000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 20000.0,
+        "num_guests": 15,
+        "party_type": "Birthday",
+        "venue_type": "Home",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": null
+      },
+      "full_result": {
+        "total_budget": 20000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 1000.0,
+            "items": [
+              {
+                "name": "Home Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 15 guests.",
+                "estimated_price": 1000.0,
+                "quantity": 1,
+                "search_terms": "Home party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Home+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Home+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Home+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Home+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Home+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 10000.05,
+            "items": [
+              {
+                "name": "Birthday Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9666.67/head).",
+                "estimated_price": 666.67,
+                "quantity": 15,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 3000.0,
+            "items": [
+              {
+                "name": "Birthday Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 3000.0,
+                "quantity": 1,
+                "search_terms": "Birthday party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Birthday+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Birthday+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 3000.0,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 3000.0,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 3000.0,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 3000.0,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Home Celebration Hall",
+            "type": "Home",
+            "capacity": 15,
+            "estimated_cost": 1000.0,
+            "search_terms": "Home party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Home+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Home+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Home+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Home+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Home+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 20000.05,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 1000.0,
+            "percentage_of_budget": 5.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 15,
+            "total_cost": 10000.05,
+            "percentage_of_budget": 50.0
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 3000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 3000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 3000.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "recommendation_id": "rec-010fda80"
+      }
+    },
+    {
+      "id": "rec-90590720",
+      "timestamp": "Sep 26, 2026, 02:10 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b945,000 for Living, Bed, Kitchen (5 lights, 3 fans)",
+      "budget": 45000.0,
+      "remaining": 2250.0,
+      "input_data": {
+        "total_budget": 45000.0,
+        "num_lights": 5,
+        "num_fans": 3,
+        "num_furniture": 2,
+        "num_dining_tables": 1,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": null
+      },
+      "full_result": {
+        "total_budget": 45000.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 6750.0,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1350.0,
+                "quantity": 5,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 3000.0,
+                "quantity": 3,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 20250.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 10125.0,
+                "quantity": 2,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 6750.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 6750.0,
+                "quantity": 1,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 5,
+            "total_cost": 6750.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 3,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 2,
+            "total_cost": 20250.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 1,
+            "total_cost": 6750.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 2250.0,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 42750.0,
+        "recommendation_id": "rec-90590720"
+      }
+    },
+    {
+      "id": "rec-23e19566",
+      "timestamp": "Sep 26, 2026, 02:05 PM",
+      "recommendation_type": "jewelry",
+      "input_summary": "\u20b915,000 for Wedding Reception Occasion Jewelry",
+      "budget": 15000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 15000.0,
+        "occasion": "Wedding Reception",
+        "preferences": "Rose gold minimal design with zirconia"
+      },
+      "full_result": {
+        "outfit_analysis": {
+          "colors": [
+            "Royal Blue",
+            "Gold Accent"
+          ],
+          "style": "Wedding Reception Elegant Occasion Wear",
+          "formality": "Festive / Semi-Formal"
+        },
+        "total_budget": 15000.0,
+        "jewelry_recommendations": [
+          {
+            "item_type": "Necklace / Pendant",
+            "description": "Refined pendant necklace coordinated with Royal Blue accents and Wedding Reception mood.",
+            "style": "Graceful Silhouette",
+            "estimated_price": 5250.0,
+            "search_terms": "CaratLane Tanishq gold accent necklace pendant",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant"
+            }
+          },
+          {
+            "item_type": "Bracelet",
+            "description": "Contemporary adjustable link bracelet with subtle stone highlights.",
+            "style": "Modern Sparkle",
+            "estimated_price": 3750.0,
+            "search_terms": "BlueStone Melorra rose gold bracelet",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=BlueStone+Melorra+rose+gold+bracelet",
+              "flipkart": "https://www.flipkart.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "bluestone": "https://www.bluestone.com/search.html?query=BlueStone+Melorra+rose+gold+bracelet",
+              "tanishq": "https://www.tanishq.co.in/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "caratlane": "https://www.caratlane.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "melorra": "https://www.melorra.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "meesho": "https://www.meesho.com/search?q=BlueStone+Melorra+rose+gold+bracelet"
+            }
+          },
+          {
+            "item_type": "Watch",
+            "description": "Sleek designer dial watch featuring metallic strap that complements your jewelry.",
+            "style": "Sophisticated Luxury",
+            "estimated_price": 3750.0,
+            "search_terms": "Titan Fastrack women designer analog watch",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=Titan+Fastrack+women+designer+analog+watch",
+              "flipkart": "https://www.flipkart.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "bluestone": "https://www.bluestone.com/search.html?query=Titan+Fastrack+women+designer+analog+watch",
+              "tanishq": "https://www.tanishq.co.in/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "caratlane": "https://www.caratlane.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "melorra": "https://www.melorra.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "meesho": "https://www.meesho.com/search?q=Titan+Fastrack+women+designer+analog+watch"
+            }
+          },
+          {
+            "item_type": "Ring",
+            "description": "Minimalist solitaire or dual-band stackable ring for everyday sparkle.",
+            "style": "Contemporary Chic",
+            "estimated_price": 2250.0,
+            "search_terms": "CaratLane silver zirconia stackable ring",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+silver+zirconia+stackable+ring",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+silver+zirconia+stackable+ring",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+silver+zirconia+stackable+ring"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "styling_tips": [
+          "Harmonize your jewelry with the Royal Blue, Gold Accent tones of your attire.",
+          "Choose a statement piece (either necklace or earrings) as the focal visual highlight.",
+          "Layer delicate rings and bracelets for an effortlessly modern look."
+        ],
+        "total_spent": 15000.0
+      }
+    },
+    {
+      "id": "rec-8e69d793",
+      "timestamp": "Sep 26, 2026, 02:05 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b925,000 for Birthday (20 guests at Banquet Hall)",
+      "budget": 25000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 25000.0,
+        "num_guests": 20,
+        "party_type": "Birthday",
+        "venue_type": "Banquet Hall",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": "Vegetarian buffet and retro balloon theme"
+      },
+      "full_result": {
+        "total_budget": 25000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 4761.9,
+            "items": [
+              {
+                "name": "Banquet Hall Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 20 guests.",
+                "estimated_price": 4761.9,
+                "quantity": 1,
+                "search_terms": "Banquet Hall party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Banquet+Hall+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Banquet+Hall+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 11904.8,
+            "items": [
+              {
+                "name": "Birthday Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9595.24/head).",
+                "estimated_price": 595.24,
+                "quantity": 20,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Birthday Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Birthday party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Birthday+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Birthday+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 1190.48,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 1190.48,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Banquet Hall Celebration Hall",
+            "type": "Banquet Hall",
+            "capacity": 20,
+            "estimated_cost": 4761.9,
+            "search_terms": "Banquet Hall party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Banquet+Hall+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Banquet+Hall+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 25000.04,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 4761.9,
+            "percentage_of_budget": 19.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 20,
+            "total_cost": 11904.8,
+            "percentage_of_budget": 47.6
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 1190.48,
+            "percentage_of_budget": 4.8
+          }
+        ],
+        "recommendation_id": "rec-8e69d793"
+      }
+    },
+    {
+      "id": "rec-9772c256",
+      "timestamp": "Sep 26, 2026, 02:05 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b960,000 for Living, Bed, Kitchen (6 lights, 3 fans)",
+      "budget": 60000.0,
+      "remaining": 3000.0,
+      "input_data": {
+        "total_budget": 60000.0,
+        "num_lights": 6,
+        "num_fans": 3,
+        "num_furniture": 2,
+        "num_dining_tables": 1,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": "Warm contemporary wooden aesthetic"
+      },
+      "full_result": {
+        "total_budget": 60000.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1500.0,
+                "quantity": 6,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 12000.0,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 4000.0,
+                "quantity": 3,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 27000.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 13500.0,
+                "quantity": 2,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 9000.0,
+                "quantity": 1,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 6,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 3,
+            "total_cost": 12000.0,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 2,
+            "total_cost": 27000.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 1,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 3000.0,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 57000.0,
+        "recommendation_id": "rec-9772c256"
+      }
+    },
+    {
+      "id": "rec-68b2bb82",
+      "timestamp": "Sep 26, 2026, 02:02 PM",
+      "recommendation_type": "jewelry",
+      "input_summary": "\u20b915,000 for Wedding Reception Occasion Jewelry",
+      "budget": 15000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 15000.0,
+        "occasion": "Wedding Reception",
+        "preferences": "Rose gold minimal design with zirconia"
+      },
+      "full_result": {
+        "outfit_analysis": {
+          "colors": [
+            "Royal Blue",
+            "Gold Accent"
+          ],
+          "style": "Wedding Reception Elegant Occasion Wear",
+          "formality": "Festive / Semi-Formal"
+        },
+        "total_budget": 15000.0,
+        "jewelry_recommendations": [
+          {
+            "item_type": "Necklace / Pendant",
+            "description": "Refined pendant necklace coordinated with Royal Blue accents and Wedding Reception mood.",
+            "style": "Graceful Silhouette",
+            "estimated_price": 5250.0,
+            "search_terms": "CaratLane Tanishq gold accent necklace pendant",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant"
+            }
+          },
+          {
+            "item_type": "Bracelet",
+            "description": "Contemporary adjustable link bracelet with subtle stone highlights.",
+            "style": "Modern Sparkle",
+            "estimated_price": 3750.0,
+            "search_terms": "BlueStone Melorra rose gold bracelet",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=BlueStone+Melorra+rose+gold+bracelet",
+              "flipkart": "https://www.flipkart.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "bluestone": "https://www.bluestone.com/search.html?query=BlueStone+Melorra+rose+gold+bracelet",
+              "tanishq": "https://www.tanishq.co.in/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "caratlane": "https://www.caratlane.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "melorra": "https://www.melorra.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "meesho": "https://www.meesho.com/search?q=BlueStone+Melorra+rose+gold+bracelet"
+            }
+          },
+          {
+            "item_type": "Watch",
+            "description": "Sleek designer dial watch featuring metallic strap that complements your jewelry.",
+            "style": "Sophisticated Luxury",
+            "estimated_price": 3750.0,
+            "search_terms": "Titan Fastrack women designer analog watch",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=Titan+Fastrack+women+designer+analog+watch",
+              "flipkart": "https://www.flipkart.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "bluestone": "https://www.bluestone.com/search.html?query=Titan+Fastrack+women+designer+analog+watch",
+              "tanishq": "https://www.tanishq.co.in/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "caratlane": "https://www.caratlane.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "melorra": "https://www.melorra.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "meesho": "https://www.meesho.com/search?q=Titan+Fastrack+women+designer+analog+watch"
+            }
+          },
+          {
+            "item_type": "Ring",
+            "description": "Minimalist solitaire or dual-band stackable ring for everyday sparkle.",
+            "style": "Contemporary Chic",
+            "estimated_price": 2250.0,
+            "search_terms": "CaratLane silver zirconia stackable ring",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+silver+zirconia+stackable+ring",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+silver+zirconia+stackable+ring",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+silver+zirconia+stackable+ring"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "styling_tips": [
+          "Harmonize your jewelry with the Royal Blue, Gold Accent tones of your attire.",
+          "Choose a statement piece (either necklace or earrings) as the focal visual highlight.",
+          "Layer delicate rings and bracelets for an effortlessly modern look."
+        ],
+        "total_spent": 15000.0
+      }
+    },
+    {
+      "id": "rec-2f90d1f7",
+      "timestamp": "Sep 26, 2026, 02:02 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b925,000 for Birthday (20 guests at Banquet Hall)",
+      "budget": 25000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 25000.0,
+        "num_guests": 20,
+        "party_type": "Birthday",
+        "venue_type": "Banquet Hall",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": "Vegetarian buffet and retro balloon theme"
+      },
+      "full_result": {
+        "total_budget": 25000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 4761.9,
+            "items": [
+              {
+                "name": "Banquet Hall Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 20 guests.",
+                "estimated_price": 4761.9,
+                "quantity": 1,
+                "search_terms": "Banquet Hall party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Banquet+Hall+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Banquet+Hall+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 11904.8,
+            "items": [
+              {
+                "name": "Birthday Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9595.24/head).",
+                "estimated_price": 595.24,
+                "quantity": 20,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Birthday Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Birthday party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Birthday+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Birthday+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 1190.48,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 1190.48,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Banquet Hall Celebration Hall",
+            "type": "Banquet Hall",
+            "capacity": 20,
+            "estimated_cost": 4761.9,
+            "search_terms": "Banquet Hall party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Banquet+Hall+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Banquet+Hall+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 25000.04,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 4761.9,
+            "percentage_of_budget": 19.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 20,
+            "total_cost": 11904.8,
+            "percentage_of_budget": 47.6
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 1190.48,
+            "percentage_of_budget": 4.8
+          }
+        ],
+        "recommendation_id": "rec-2f90d1f7"
+      }
+    },
+    {
+      "id": "rec-c5de8734",
+      "timestamp": "Sep 26, 2026, 02:02 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b960,000 for Living, Bed, Kitchen (6 lights, 3 fans)",
+      "budget": 60000.0,
+      "remaining": 3000.0,
+      "input_data": {
+        "total_budget": 60000.0,
+        "num_lights": 6,
+        "num_fans": 3,
+        "num_furniture": 2,
+        "num_dining_tables": 1,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": "Warm contemporary wooden aesthetic"
+      },
+      "full_result": {
+        "total_budget": 60000.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1500.0,
+                "quantity": 6,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 12000.0,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 4000.0,
+                "quantity": 3,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 27000.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 13500.0,
+                "quantity": 2,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 9000.0,
+                "quantity": 1,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 6,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 3,
+            "total_cost": 12000.0,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 2,
+            "total_cost": 27000.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 1,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 3000.0,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 57000.0,
+        "recommendation_id": "rec-c5de8734"
+      }
+    },
+    {
+      "id": "rec-f9283643",
+      "timestamp": "Sep 26, 2026, 02:00 PM",
+      "recommendation_type": "jewelry",
+      "input_summary": "\u20b915,000 for Wedding Reception Occasion Jewelry",
+      "budget": 15000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 15000.0,
+        "occasion": "Wedding Reception",
+        "preferences": "Rose gold minimal design with zirconia"
+      },
+      "full_result": {
+        "outfit_analysis": {
+          "colors": [
+            "Royal Blue",
+            "Gold Accent"
+          ],
+          "style": "Wedding Reception Elegant Occasion Wear",
+          "formality": "Festive / Semi-Formal"
+        },
+        "total_budget": 15000.0,
+        "jewelry_recommendations": [
+          {
+            "item_type": "Necklace / Pendant",
+            "description": "Refined pendant necklace coordinated with Royal Blue accents and Wedding Reception mood.",
+            "style": "Graceful Silhouette",
+            "estimated_price": 5250.0,
+            "search_terms": "CaratLane Tanishq gold accent necklace pendant",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant"
+            }
+          },
+          {
+            "item_type": "Bracelet",
+            "description": "Contemporary adjustable link bracelet with subtle stone highlights.",
+            "style": "Modern Sparkle",
+            "estimated_price": 3750.0,
+            "search_terms": "BlueStone Melorra rose gold bracelet",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=BlueStone+Melorra+rose+gold+bracelet",
+              "flipkart": "https://www.flipkart.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "bluestone": "https://www.bluestone.com/search.html?query=BlueStone+Melorra+rose+gold+bracelet",
+              "tanishq": "https://www.tanishq.co.in/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "caratlane": "https://www.caratlane.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "melorra": "https://www.melorra.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "meesho": "https://www.meesho.com/search?q=BlueStone+Melorra+rose+gold+bracelet"
+            }
+          },
+          {
+            "item_type": "Watch",
+            "description": "Sleek designer dial watch featuring metallic strap that complements your jewelry.",
+            "style": "Sophisticated Luxury",
+            "estimated_price": 3750.0,
+            "search_terms": "Titan Fastrack women designer analog watch",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=Titan+Fastrack+women+designer+analog+watch",
+              "flipkart": "https://www.flipkart.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "bluestone": "https://www.bluestone.com/search.html?query=Titan+Fastrack+women+designer+analog+watch",
+              "tanishq": "https://www.tanishq.co.in/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "caratlane": "https://www.caratlane.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "melorra": "https://www.melorra.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "meesho": "https://www.meesho.com/search?q=Titan+Fastrack+women+designer+analog+watch"
+            }
+          },
+          {
+            "item_type": "Ring",
+            "description": "Minimalist solitaire or dual-band stackable ring for everyday sparkle.",
+            "style": "Contemporary Chic",
+            "estimated_price": 2250.0,
+            "search_terms": "CaratLane silver zirconia stackable ring",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+silver+zirconia+stackable+ring",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+silver+zirconia+stackable+ring",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+silver+zirconia+stackable+ring"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "styling_tips": [
+          "Harmonize your jewelry with the Royal Blue, Gold Accent tones of your attire.",
+          "Choose a statement piece (either necklace or earrings) as the focal visual highlight.",
+          "Layer delicate rings and bracelets for an effortlessly modern look."
+        ],
+        "total_spent": 15000.0
+      }
+    },
+    {
+      "id": "rec-e042997c",
+      "timestamp": "Sep 26, 2026, 02:00 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b925,000 for Birthday (20 guests at Banquet Hall)",
+      "budget": 25000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 25000.0,
+        "num_guests": 20,
+        "party_type": "Birthday",
+        "venue_type": "Banquet Hall",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": "Vegetarian buffet and retro balloon theme"
+      },
+      "full_result": {
+        "total_budget": 25000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 4761.9,
+            "items": [
+              {
+                "name": "Banquet Hall Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 20 guests.",
+                "estimated_price": 4761.9,
+                "quantity": 1,
+                "search_terms": "Banquet Hall party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Banquet+Hall+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Banquet+Hall+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 11904.8,
+            "items": [
+              {
+                "name": "Birthday Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9595.24/head).",
+                "estimated_price": 595.24,
+                "quantity": 20,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Birthday Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Birthday party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Birthday+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Birthday+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 1190.48,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 1190.48,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Banquet Hall Celebration Hall",
+            "type": "Banquet Hall",
+            "capacity": 20,
+            "estimated_cost": 4761.9,
+            "search_terms": "Banquet Hall party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Banquet+Hall+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Banquet+Hall+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 25000.04,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 4761.9,
+            "percentage_of_budget": 19.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 20,
+            "total_cost": 11904.8,
+            "percentage_of_budget": 47.6
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 1190.48,
+            "percentage_of_budget": 4.8
+          }
+        ],
+        "recommendation_id": "rec-e042997c"
+      }
+    },
+    {
+      "id": "rec-3a9b8201",
+      "timestamp": "Sep 26, 2026, 02:00 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b960,000 for Living, Bed, Kitchen (6 lights, 3 fans)",
+      "budget": 60000.0,
+      "remaining": 3000.0,
+      "input_data": {
+        "total_budget": 60000.0,
+        "num_lights": 6,
+        "num_fans": 3,
+        "num_furniture": 2,
+        "num_dining_tables": 1,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": "Warm contemporary wooden aesthetic"
+      },
+      "full_result": {
+        "total_budget": 60000.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1500.0,
+                "quantity": 6,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 12000.0,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 4000.0,
+                "quantity": 3,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 27000.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 13500.0,
+                "quantity": 2,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 9000.0,
+                "quantity": 1,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 6,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 3,
+            "total_cost": 12000.0,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 2,
+            "total_cost": 27000.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 1,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 3000.0,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 57000.0,
+        "recommendation_id": "rec-3a9b8201"
+      }
+    },
+    {
+      "id": "rec-2315fd83",
+      "timestamp": "Sep 26, 2026, 01:58 PM",
+      "recommendation_type": "jewelry",
+      "input_summary": "\u20b915,000 for Wedding Reception Occasion Jewelry",
+      "budget": 15000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 15000.0,
+        "occasion": "Wedding Reception",
+        "preferences": "Rose gold minimal design with zirconia"
+      },
+      "full_result": {
+        "outfit_analysis": {
+          "colors": [
+            "Royal Blue",
+            "Gold Accent"
+          ],
+          "style": "Wedding Reception Elegant Occasion Wear",
+          "formality": "Festive / Semi-Formal"
+        },
+        "total_budget": 15000.0,
+        "jewelry_recommendations": [
+          {
+            "item_type": "Necklace / Pendant",
+            "description": "Refined pendant necklace coordinated with Royal Blue accents and Wedding Reception mood.",
+            "style": "Graceful Silhouette",
+            "estimated_price": 5250.0,
+            "search_terms": "CaratLane Tanishq gold accent necklace pendant",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+Tanishq+gold+accent+necklace+pendant"
+            }
+          },
+          {
+            "item_type": "Bracelet",
+            "description": "Contemporary adjustable link bracelet with subtle stone highlights.",
+            "style": "Modern Sparkle",
+            "estimated_price": 3750.0,
+            "search_terms": "BlueStone Melorra rose gold bracelet",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=BlueStone+Melorra+rose+gold+bracelet",
+              "flipkart": "https://www.flipkart.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "bluestone": "https://www.bluestone.com/search.html?query=BlueStone+Melorra+rose+gold+bracelet",
+              "tanishq": "https://www.tanishq.co.in/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "caratlane": "https://www.caratlane.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "melorra": "https://www.melorra.com/search?q=BlueStone+Melorra+rose+gold+bracelet",
+              "meesho": "https://www.meesho.com/search?q=BlueStone+Melorra+rose+gold+bracelet"
+            }
+          },
+          {
+            "item_type": "Watch",
+            "description": "Sleek designer dial watch featuring metallic strap that complements your jewelry.",
+            "style": "Sophisticated Luxury",
+            "estimated_price": 3750.0,
+            "search_terms": "Titan Fastrack women designer analog watch",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=Titan+Fastrack+women+designer+analog+watch",
+              "flipkart": "https://www.flipkart.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "bluestone": "https://www.bluestone.com/search.html?query=Titan+Fastrack+women+designer+analog+watch",
+              "tanishq": "https://www.tanishq.co.in/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "caratlane": "https://www.caratlane.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "melorra": "https://www.melorra.com/search?q=Titan+Fastrack+women+designer+analog+watch",
+              "meesho": "https://www.meesho.com/search?q=Titan+Fastrack+women+designer+analog+watch"
+            }
+          },
+          {
+            "item_type": "Ring",
+            "description": "Minimalist solitaire or dual-band stackable ring for everyday sparkle.",
+            "style": "Contemporary Chic",
+            "estimated_price": 2250.0,
+            "search_terms": "CaratLane silver zirconia stackable ring",
+            "shopping_links": {
+              "amazon": "https://www.amazon.in/s?k=CaratLane+silver+zirconia+stackable+ring",
+              "flipkart": "https://www.flipkart.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "bluestone": "https://www.bluestone.com/search.html?query=CaratLane+silver+zirconia+stackable+ring",
+              "tanishq": "https://www.tanishq.co.in/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "caratlane": "https://www.caratlane.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "melorra": "https://www.melorra.com/search?q=CaratLane+silver+zirconia+stackable+ring",
+              "meesho": "https://www.meesho.com/search?q=CaratLane+silver+zirconia+stackable+ring"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "styling_tips": [
+          "Harmonize your jewelry with the Royal Blue, Gold Accent tones of your attire.",
+          "Choose a statement piece (either necklace or earrings) as the focal visual highlight.",
+          "Layer delicate rings and bracelets for an effortlessly modern look."
+        ],
+        "total_spent": 15000.0
+      }
+    },
+    {
+      "id": "rec-a7467f98",
+      "timestamp": "Sep 26, 2026, 01:58 PM",
+      "recommendation_type": "party",
+      "input_summary": "\u20b925,000 for Birthday (20 guests at Banquet Hall)",
+      "budget": 25000.0,
+      "remaining": 0.0,
+      "input_data": {
+        "total_budget": 25000.0,
+        "num_guests": 20,
+        "party_type": "Birthday",
+        "venue_type": "Banquet Hall",
+        "needs_catering": true,
+        "needs_decoration": true,
+        "needs_entertainment": true,
+        "additional_requirements": "Vegetarian buffet and retro balloon theme"
+      },
+      "full_result": {
+        "total_budget": 25000.0,
+        "budget_breakdown": [
+          {
+            "category": "venue",
+            "allocation": 4761.9,
+            "items": [
+              {
+                "name": "Banquet Hall Arrangement & Seating",
+                "description": "Space booking and chairs arrangement for 20 guests.",
+                "estimated_price": 4761.9,
+                "quantity": 1,
+                "search_terms": "Banquet Hall party venue hall booking",
+                "shopping_links": {
+                  "google": "https://www.google.com/search?q=Banquet+Hall+party+venue+hall+booking",
+                  "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+venue+hall+booking",
+                  "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+venue+hall+booking",
+                  "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+venue+hall+booking",
+                  "nobroker": "https://www.nobroker.in/property/search/searchTerm=Banquet+Hall+party+venue+hall+booking"
+                }
+              }
+            ]
+          },
+          {
+            "category": "catering",
+            "allocation": 11904.8,
+            "items": [
+              {
+                "name": "Birthday Buffet Platter & Beverages",
+                "description": "Appetizers, main dishes, and cool drinks (\u20b9595.24/head).",
+                "estimated_price": 595.24,
+                "quantity": 20,
+                "search_terms": "Swiggy Zomato party food catering bulk platter",
+                "shopping_links": {
+                  "swiggy": "https://www.swiggy.com/search?query=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "zomato": "https://www.zomato.com/search?q=Swiggy+Zomato+party+food+catering+bulk+platter",
+                  "bigbasket": "https://www.bigbasket.com/ps/?q=Swiggy+Zomato+party+food+catering+bulk+platter"
+                }
+              }
+            ]
+          },
+          {
+            "category": "decoration",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Birthday Celebration Decor & LED Lights Kit",
+                "description": "Photo backdrop, helium balloon arch, fairy string lights.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Birthday party theme decoration lights set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Birthday+party+theme+decoration+lights+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "meesho": "https://www.meesho.com/search?q=Birthday+party+theme+decoration+lights+set",
+                  "myntra": "https://www.myntra.com/search?q=Birthday+party+theme+decoration+lights+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "entertainment",
+            "allocation": 3571.43,
+            "items": [
+              {
+                "name": "Party Sound System & Fun Group Activities",
+                "description": "High output speaker and interactive party games.",
+                "estimated_price": 3571.43,
+                "quantity": 1,
+                "search_terms": "Party soundbar karaoke bluetooth speaker",
+                "shopping_links": {
+                  "bookmyshow": "https://in.bookmyshow.com/search?q=Party+soundbar+karaoke+bluetooth+speaker",
+                  "amazon": "https://www.amazon.in/s?k=Party+soundbar+karaoke+bluetooth+speaker",
+                  "flipkart": "https://www.flipkart.com/search?q=Party+soundbar+karaoke+bluetooth+speaker"
+                }
+              }
+            ]
+          },
+          {
+            "category": "contingency",
+            "allocation": 1190.48,
+            "items": [
+              {
+                "name": "Emergency Reserve & Disposables",
+                "description": "Reserve fund for last-minute snacks, paper plates, napkins.",
+                "estimated_price": 1190.48,
+                "quantity": 1,
+                "search_terms": "Eco-friendly disposable party plates cups",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Eco-friendly+disposable+party+plates+cups",
+                  "flipkart": "https://www.flipkart.com/search?q=Eco-friendly+disposable+party+plates+cups",
+                  "google": "https://www.google.com/search?q=Eco-friendly+disposable+party+plates+cups"
+                }
+              }
+            ]
+          }
+        ],
+        "venue_suggestions": [
+          {
+            "name": "Banquet Hall Celebration Hall",
+            "type": "Banquet Hall",
+            "capacity": 20,
+            "estimated_cost": 4761.9,
+            "search_terms": "Banquet Hall party space booking",
+            "search_links": {
+              "google": "https://www.google.com/search?q=Banquet+Hall+party+space+booking",
+              "booking": "https://www.booking.com/search.html?ss=Banquet+Hall+party+space+booking",
+              "makemytrip": "https://www.makemytrip.com/hotels/hotel-listing/?searchText=Banquet+Hall+party+space+booking",
+              "oyorooms": "https://www.oyorooms.com/search/?location=Banquet+Hall+party+space+booking",
+              "nobroker": "https://www.nobroker.in/property/search?searchTerm=Banquet+Hall+party+space+booking"
+            }
+          }
+        ],
+        "remaining_budget": 0.0,
+        "additional_suggestions": [
+          "Opt for combo meal platters on Swiggy or Zomato for best per-head rate.",
+          "Set up DIY photo booth with simple fairy lights for Instagram-worthy snaps.",
+          "Send digital e-invitations to track RSVPs and prevent over-ordering food."
+        ],
+        "total_allocated": 25000.04,
+        "calculation_table_inr": [
+          {
+            "category": "Venue",
+            "items_count": 1,
+            "total_cost": 4761.9,
+            "percentage_of_budget": 19.0
+          },
+          {
+            "category": "Catering",
+            "items_count": 20,
+            "total_cost": 11904.8,
+            "percentage_of_budget": 47.6
+          },
+          {
+            "category": "Decoration",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Entertainment",
+            "items_count": 1,
+            "total_cost": 3571.43,
+            "percentage_of_budget": 14.3
+          },
+          {
+            "category": "Contingency",
+            "items_count": 1,
+            "total_cost": 1190.48,
+            "percentage_of_budget": 4.8
+          }
+        ],
+        "recommendation_id": "rec-a7467f98"
+      }
+    },
+    {
+      "id": "rec-ea13b182",
+      "timestamp": "Sep 26, 2026, 01:58 PM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b960,000 for Living, Bed, Kitchen (6 lights, 3 fans)",
+      "budget": 60000.0,
+      "remaining": 3000.0,
+      "input_data": {
+        "total_budget": 60000.0,
+        "num_lights": 6,
+        "num_fans": 3,
+        "num_furniture": 2,
+        "num_dining_tables": 1,
+        "has_living_room": true,
+        "has_kitchen": true,
+        "has_bedroom": true,
+        "additional_requirements": "Warm contemporary wooden aesthetic"
+      },
+      "full_result": {
+        "total_budget": 60000.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Philips Cool Daylight LED Ceiling Fixture",
+                "description": "Energy-saving glare-free downlights ideal for rooms.",
+                "estimated_price": 1500.0,
+                "quantity": 6,
+                "search_terms": "Philips 12W LED ceiling downlight warm white",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "myntra": "https://www.myntra.com/search?q=Philips+12W+LED+ceiling+downlight+warm+white",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+12W+LED+ceiling+downlight+warm+white"
+                }
+              }
+            ]
+          },
+          {
+            "category": "ceiling_fans",
+            "allocation": 12000.0,
+            "items": [
+              {
+                "name": "Havells / Atomberg BLDC Ceiling Fan",
+                "description": "Silent high-speed 1200mm ceiling fan with energy star rating.",
+                "estimated_price": 4000.0,
+                "quantity": 3,
+                "search_terms": "Havells Atomberg BLDC 1200mm ceiling fan",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "flipkart": "https://www.flipkart.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "myntra": "https://www.myntra.com/search?q=Havells+Atomberg+BLDC+1200mm+ceiling+fan",
+                  "ajio": "https://www.ajio.com/search/?text=Havells+Atomberg+BLDC+1200mm+ceiling+fan"
+                }
+              }
+            ]
+          },
+          {
+            "category": "furniture",
+            "allocation": 27000.0,
+            "items": [
+              {
+                "name": "Modern Minimalist Wooden Sofa / Lounge Set",
+                "description": "Comfortable ergonomic seating suited for Living room, Kitchen, Bedroom.",
+                "estimated_price": 13500.0,
+                "quantity": 2,
+                "search_terms": "Wakefit modern compact wooden sofa set",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Wakefit+modern+compact+wooden+sofa+set",
+                  "flipkart": "https://www.flipkart.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "myntra": "https://www.myntra.com/search?q=Wakefit+modern+compact+wooden+sofa+set",
+                  "ajio": "https://www.ajio.com/search/?text=Wakefit+modern+compact+wooden+sofa+set"
+                }
+              }
+            ]
+          },
+          {
+            "category": "dining_tables",
+            "allocation": 9000.0,
+            "items": [
+              {
+                "name": "Compact Engineered Wood Dining Table",
+                "description": "Space-saving durable dining table set with modern finish.",
+                "estimated_price": 9000.0,
+                "quantity": 1,
+                "search_terms": "IKEA wooden 4 seater dining table",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=IKEA+wooden+4+seater+dining+table",
+                  "flipkart": "https://www.flipkart.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=IKEA+wooden+4+seater+dining+table",
+                  "myntra": "https://www.myntra.com/search?q=IKEA+wooden+4+seater+dining+table",
+                  "ajio": "https://www.ajio.com/search/?text=IKEA+wooden+4+seater+dining+table"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 6,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          },
+          {
+            "category": "Ceiling Fans",
+            "items_count": 3,
+            "total_cost": 12000.0,
+            "percentage_of_budget": 20.0
+          },
+          {
+            "category": "Furniture",
+            "items_count": 2,
+            "total_cost": 27000.0,
+            "percentage_of_budget": 45.0
+          },
+          {
+            "category": "Dining Tables",
+            "items_count": 1,
+            "total_cost": 9000.0,
+            "percentage_of_budget": 15.0
+          }
+        ],
+        "remaining_budget": 3000.0,
+        "additional_suggestions": [
+          "Tailored for Living room, Kitchen, Bedroom with smart space optimization.",
+          "Use warm lighting in the living area and bright white LED in study/kitchen areas.",
+          "Check IKEA and Amazon India for bundle furniture offers."
+        ],
+        "total_spent": 57000.0,
+        "recommendation_id": "rec-ea13b182"
+      }
+    },
+    {
+      "id": "rec-demo-1",
+      "timestamp": "Sep 26, 2026, 11:58 AM",
+      "recommendation_type": "home",
+      "input_summary": "\u20b950,000 for Living Room & Bedroom (4 Lights, 2 Fans, 2 Furniture)",
+      "budget": 50000.0,
+      "remaining": 2500.0,
+      "full_result": {
+        "total_budget": 50000.0,
+        "remaining_budget": 2500.0,
+        "total_spent": 47500.0,
+        "budget_breakdown": [
+          {
+            "category": "lighting",
+            "allocation": 6000.0,
+            "items": [
+              {
+                "name": "Philips Smart Wi-Fi LED Downlights",
+                "description": "Color-changing ambient LED downlights with app control.",
+                "estimated_price": 1500.0,
+                "quantity": 4,
+                "search_terms": "Philips Smart LED ceiling light",
+                "shopping_links": {
+                  "amazon": "https://www.amazon.in/s?k=Philips+Smart+LED+ceiling+light",
+                  "flipkart": "https://www.flipkart.com/search?q=Philips+Smart+LED+ceiling+light",
+                  "ikea": "https://www.ikea.com/in/en/search/?q=Philips+Smart+LED+ceiling+light",
+                  "myntra": "https://www.myntra.com/search?q=Philips+Smart+LED+ceiling+light",
+                  "ajio": "https://www.ajio.com/search/?text=Philips+Smart+LED+ceiling+light"
+                }
+              }
+            ]
+          }
+        ],
+        "calculation_table": [
+          {
+            "category": "Lighting",
+            "items_count": 4,
+            "total_cost": 6000.0,
+            "percentage_of_budget": 12.0
+          }
+        ],
+        "additional_suggestions": [
+          "Buy multipacks on Amazon India for smart bulbs to save up to 25%."
+        ]
+      }
+    }
+  ],
+  "eswar": []
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - PocketSmart AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <!-- Authenticated Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+        <span>Pocket<span class="brand-accent">Smart</span></span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item active"><a href="/dashboard"><i class="fas fa-columns"></i> Dashboard</a></li>
+        <li class="nav-item"><a href="/home-planner"><i class="fas fa-home"></i> Home Planner</a></li>
+        <li class="nav-item"><a href="/party-planner"><i class="fas fa-glass-cheers"></i> Party Planner</a></li>
+        <li class="nav-item"><a href="/jewelry-planner"><i class="fas fa-gem"></i> Jewelry Planner</a></li>
+        <li class="nav-item"><a href="/history"><i class="fas fa-history"></i> History</a></li>
+        <li class="nav-item"><a href="/logout" class="btn-nav-primary"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Dashboard Container -->
+  <main class="container">
+    <!-- Welcome Header -->
+    <div class="planner-page-header" style="padding: 3rem 2rem;">
+      <h1 class="planner-page-title">Welcome, {{ user.full_name or user.username }}!</h1>
+      <p class="planner-page-subtitle">
+        Choose a budget planner to get started with your personalized financial planning experience.
+      </p>
+    </div>
+
+    <!-- 3 Planner Cards Grid -->
+    <div class="cards-grid">
+      <!-- Home Interior Card -->
+      <div class="feature-card">
+        <div class="feature-card-header home-theme">
+          <i class="fas fa-couch card-icon-large"></i>
+        </div>
+        <div class="feature-card-body">
+          <h3 class="card-title"><i class="fas fa-home" style="color: #0284c7;"></i> Home Budget Planner</h3>
+          <p class="card-text">
+            Plan your interior design budget efficiently with AI-powered recommendations for furniture,
+            lighting, and more across IKEA and Amazon India.
+          </p>
+          <a href="/home-planner" class="btn btn-primary btn-block" id="btn-dash-home">
+            <i class="fas fa-arrow-right"></i> Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Party Budget Card -->
+      <div class="feature-card">
+        <div class="feature-card-header party-theme">
+          <i class="fas fa-glass-cheers card-icon-large"></i>
+        </div>
+        <div class="feature-card-body">
+          <h3 class="card-title"><i class="fas fa-glass-cheers" style="color: #c026d3;"></i> Party Budget Planner</h3>
+          <p class="card-text">
+            Plan your perfect event with smart budget allocations for venue, catering, decorations, and
+            entertainment across Swiggy, Zomato, and OYO.
+          </p>
+          <a href="/party-planner" class="btn btn-primary btn-block" id="btn-dash-party">
+            <i class="fas fa-arrow-right"></i> Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Jewelry Budget Card -->
+      <div class="feature-card">
+        <div class="feature-card-header jewelry-theme">
+          <i class="fas fa-gem card-icon-large"></i>
+        </div>
+        <div class="feature-card-body">
+          <h3 class="card-title"><i class="fas fa-gem" style="color: #0d9488;"></i> Jewelry Budget Planner</h3>
+          <p class="card-text">
+            Find the ideal jewelry pieces for any occasion that match your outfit and budget. Features
+            multimodal outfit color analysis and links to Tanishq & CaratLane.
+          </p>
+          <a href="/jewelry-planner" class="btn btn-primary btn-block" id="btn-dash-jewelry">
+            <i class="fas fa-arrow-right"></i> Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center View History Button -->
+    <div style="text-align: center; margin: 2rem 0 3.5rem;">
+      <a href="/history" class="btn btn-secondary btn-lg" style="background-color: var(--accent-gold); color: #0f172a; font-weight: 700; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);" id="btn-view-all-history">
+        <i class="fas fa-history"></i> View All Recommendation History
+      </a>
+    </div>
+
+    <!-- Recent Activity Section -->
+    <div class="form-card">
+      <div class="form-section-title">
+        <i class="fas fa-clock" style="color: var(--accent-blue);"></i> Recent Activity
+      </div>
+
+      {% if recent_activity and recent_activity|length > 0 %}
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          {% for item in recent_activity %}
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1.1rem; background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); transition: var(--trans-fast);" class="activity-row">
+              <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 44px; height: 44px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+                  {% if item.recommendation_type == 'home' %}background: #e0f2fe; color: #0284c7;
+                  {% elif item.recommendation_type == 'party' %}background: #fce7f3; color: #be185d;
+                  {% else %}background: #ecfdf5; color: #047857;{% endif %}">
+                  {% if item.recommendation_type == 'home' %}<i class="fas fa-home"></i>
+                  {% elif item.recommendation_type == 'party' %}<i class="fas fa-glass-cheers"></i>
+                  {% else %}<i class="fas fa-gem"></i>{% endif %}
+                </div>
+                <div>
+                  <div style="font-weight: 700; color: var(--primary-navy); font-size: 1.05rem;">
+                    {{ item.recommendation_type|title }} Budget Plan
+                  </div>
+                  <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.15rem;">
+                    Budget: <strong>₹{{ "{:,.0f}".format(item.budget) }}</strong> &bull; Created on {{ item.timestamp }}
+                  </div>
+                  <div style="font-size: 0.82rem; color: #475569; margin-top: 0.2rem;">
+                    {{ item.input_summary }}
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="/history" class="btn btn-outline" style="padding: 0.4rem 0.9rem; font-size: 0.85rem;">
+                  View Plan <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <div style="text-align: center; padding: 2.5rem; color: var(--text-muted);">
+          <i class="fas fa-clipboard-list" style="font-size: 2.5rem; margin-bottom: 0.75rem; color: #cbd5e1;"></i>
+          <p>No budget plans generated yet. Choose a planner above to get your first AI recommendation!</p>
+        </div>
+      {% endif %}
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bottom" style="border-top: none; padding-top: 0; text-align: center; justify-content: center;">
+      <p>© 2026 PocketSmart AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

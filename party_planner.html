@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Budget Planner - PocketSmart AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+        <span>Pocket<span class="brand-accent">Smart</span></span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/dashboard"><i class="fas fa-columns"></i> Dashboard</a></li>
+        <li class="nav-item"><a href="/home-planner"><i class="fas fa-home"></i> Home Planner</a></li>
+        <li class="nav-item active"><a href="/party-planner"><i class="fas fa-glass-cheers"></i> Party Planner</a></li>
+        <li class="nav-item"><a href="/jewelry-planner"><i class="fas fa-gem"></i> Jewelry Planner</a></li>
+        <li class="nav-item"><a href="/history"><i class="fas fa-history"></i> History</a></li>
+        <li class="nav-item"><a href="/logout" class="btn-nav-primary"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="container">
+    <div class="planner-page-header">
+      <h1 class="planner-page-title">Party Budget Planner</h1>
+      <p class="planner-page-subtitle">Plan your perfect event with AI-powered budget recommendations</p>
+    </div>
+
+    <!-- Planner Input Form -->
+    <div class="form-card" id="party-planner-form-card">
+      <form id="party-planner-form">
+        <!-- 1. Basic Information -->
+        <div class="form-section-title">
+          <i class="fas fa-rupee-sign" style="color: var(--accent-blue);"></i> Basic Information
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="total_budget">Total Budget (₹)</label>
+            <div class="input-with-icon">
+              <i class="fas fa-wallet input-icon"></i>
+              <input type="number" id="total_budget" name="total_budget" class="form-control" placeholder="e.g. 20000" min="500" step="500" required value="20000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="num_guests">Number of Guests</label>
+            <div class="input-with-icon">
+              <i class="fas fa-users input-icon"></i>
+              <input type="number" id="num_guests" name="num_guests" class="form-control" min="1" max="5000" value="15" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Event Details -->
+        <div class="form-section-title" style="margin-top: 1.75rem;">
+          <i class="fas fa-calendar-alt" style="color: var(--accent-blue);"></i> Event Details
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="party_type">Party Type</label>
+            <select id="party_type" name="party_type" class="form-control">
+              <option value="Birthday" selected>Birthday Party</option>
+              <option value="Wedding">Wedding / Sangeet / Reception</option>
+              <option value="Anniversary">Anniversary Celebration</option>
+              <option value="Corporate">Corporate / Team Gathering</option>
+              <option value="Casual Gathering">Casual House Gathering</option>
+              <option value="Farewell">Farewell / Reunion</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="venue_type">Venue Type</label>
+            <select id="venue_type" name="venue_type" class="form-control">
+              <option value="Home" selected>Home / Private Residence</option>
+              <option value="Banquet Hall">Banquet Hall</option>
+              <option value="Resort">Resort / Farmhouse</option>
+              <option value="Outdoor Lawn">Outdoor Lawn / Terrace</option>
+              <option value="Club / Cafe">Club / Cafe / Lounge</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- 3. Party Needs -->
+        <div class="form-section-title" style="margin-top: 1.75rem;">
+          <i class="fas fa-concierge-bell" style="color: var(--accent-blue);"></i> Party Needs
+        </div>
+        <div class="checkbox-group">
+          <label class="custom-checkbox-label checked" id="label-catering">
+            <input type="checkbox" id="needs_catering" name="needs_catering" checked>
+            <span><i class="fas fa-utensils" style="color: #ea580c;"></i> Catering / Food & Drinks</span>
+          </label>
+          <label class="custom-checkbox-label checked" id="label-decoration">
+            <input type="checkbox" id="needs_decoration" name="needs_decoration" checked>
+            <span><i class="fas fa-magic" style="color: #9333ea;"></i> Theme Decoration</span>
+          </label>
+          <label class="custom-checkbox-label checked" id="label-entertainment">
+            <input type="checkbox" id="needs_entertainment" name="needs_entertainment" checked>
+            <span><i class="fas fa-music" style="color: #2563eb;"></i> Music & Entertainment</span>
+          </label>
+        </div>
+
+        <!-- 4. Additional Requirements -->
+        <div class="form-section-title" style="margin-top: 1.75rem;">
+          <i class="fas fa-pencil-alt" style="color: var(--accent-blue);"></i> Additional Requirements
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="additional_requirements">Special Requests, Themes, Dietary Restrictions</label>
+          <textarea id="additional_requirements" name="additional_requirements" class="form-control" placeholder="Any specific requirements (e.g., pure vegetarian Indian menu, fairy lights & photo booth, karaoke setup, chocolate fountain)..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div style="margin-top: 2rem; text-align: center;">
+          <button type="submit" class="btn btn-primary btn-lg" id="btn-submit-party-planner" style="min-width: 280px;">
+            <i class="fas fa-glass-cheers"></i> Generate Budget Plan
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Spinner Loading State -->
+    <div class="spinner-container" id="loading-spinner">
+      <div class="spinner"></div>
+      <h3 style="color: var(--primary-navy); font-weight: 700;">Gemini AI is crafting your party budget...</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.3rem;">Allocating vendor costs across Swiggy, Zomato, OYO, MakeMyTrip, and BookMyShow.</p>
+    </div>
+
+    <!-- Results Area -->
+    <div class="results-container" id="results-area" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span class="hero-badge" style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3); color: #059669;">
+            <i class="fas fa-check-circle"></i> Event Plan Ready
+          </span>
+          <h2 class="section-title" style="margin-top: 0.25rem;">Your Party Budget Plan</h2>
+        </div>
+        <button onclick="window.print()" class="btn btn-secondary" style="background: #1e293b; color: white;">
+          <i class="fas fa-print"></i> Print / Save
+        </button>
+      </div>
+
+      <!-- Budget Summary Card -->
+      <div class="budget-summary-card">
+        <div class="summary-stat">
+          <div class="summary-label">Total Budget</div>
+          <div class="summary-value text-blue" id="res-total-budget">₹0.00</div>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-label">Allocated</div>
+          <div class="summary-value text-amber" id="res-total-allocated">₹0.00</div>
+        </div>
+        <div class="summary-stat">
+          <div class="summary-label">Remaining</div>
+          <div class="summary-value text-green" id="res-remaining-budget">₹0.00</div>
+        </div>
+      </div>
+
+      <!-- Categories & Items Breakdown -->
+      <div id="res-party-categories-container"></div>
+
+      <!-- Venue Suggestions Card -->
+      <div class="category-card" id="venue-suggestions-card" style="display: none;">
+        <div class="category-header">
+          <div class="category-title">
+            <i class="fas fa-map-marker-alt" style="color: #ef4444;"></i> Venue Suggestions
+          </div>
+          <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Direct booking & map links</span>
+        </div>
+        <div id="res-venues-list"></div>
+      </div>
+
+      <!-- Calculation Breakdown Table -->
+      <div class="category-card" id="calc-table-card">
+        <div class="category-header">
+          <div class="category-title">
+            <i class="fas fa-calculator" style="color: var(--accent-blue);"></i> Cost Calculation Summary
+          </div>
+          <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Percentage breakdown</span>
+        </div>
+        <div class="data-table-wrapper">
+          <table class="data-table" id="calculation-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Items Count</th>
+                <th>Total Cost (₹)</th>
+                <th>Percentage of Budget</th>
+              </tr>
+            </thead>
+            <tbody id="res-calc-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Additional Suggestions Tips -->
+      <div class="tips-card" id="tips-card">
+        <div class="tips-title">
+          <i class="fas fa-lightbulb"></i> Event Host Tips & Money-Saving Suggestions
+        </div>
+        <ul class="tips-list" id="res-tips-list"></ul>
+      </div>
+
+      <!-- Action Buttons below results -->
+      <div style="text-align: center; margin-top: 2.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/history" class="btn btn-outline">
+          <i class="fas fa-history"></i> View in Saved History
+        </a>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn btn-primary">
+          <i class="fas fa-redo"></i> Plan Another Event
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bottom" style="border-top: none; padding-top: 0; text-align: center; justify-content: center;">
+      <p>© 2026 PocketSmart AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle active state for checkboxes
+    ['needs_catering', 'needs_decoration', 'needs_entertainment'].forEach(id => {
+      const cb = document.getElementById(id);
+      if (cb) {
+        cb.addEventListener('change', (e) => {
+          e.target.closest('.custom-checkbox-label').classList.toggle('checked', e.target.checked);
+        });
+      }
+    });
+
+    // Form submission
+    document.getElementById('party-planner-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('btn-submit-party-planner');
+      const spinner = document.getElementById('loading-spinner');
+      const resultsArea = document.getElementById('results-area');
+
+      const payload = {
+        total_budget: parseFloat(document.getElementById('total_budget').value) || 0,
+        num_guests: parseInt(document.getElementById('num_guests').value) || 0,
+        party_type: document.getElementById('party_type').value,
+        venue_type: document.getElementById('venue_type').value,
+        needs_catering: document.getElementById('needs_catering').checked,
+        needs_decoration: document.getElementById('needs_decoration').checked,
+        needs_entertainment: document.getElementById('needs_entertainment').checked,
+        additional_requirements: document.getElementById('additional_requirements').value || ""
+      };
+
+      submitBtn.disabled = true;
+      spinner.style.display = 'block';
+      resultsArea.style.display = 'none';
+
+      try {
+        const response = await fetch('/party-budget', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) {
+          const err = await response.json();
+          throw new Error(err.detail || 'Failed to generate party plan');
+        }
+
+        const data = await response.json();
+        renderPartyResults(data);
+
+        spinner.style.display = 'none';
+        resultsArea.style.display = 'block';
+        resultsArea.scrollIntoView({ behavior: 'smooth' });
+      } catch (err) {
+        spinner.style.display = 'none';
+        alert('Notice: ' + err.message);
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+
+    function renderPartyResults(data) {
+      document.getElementById('res-total-budget').textContent = `₹${Number(data.total_budget || 0).toLocaleString('en-IN', {minimumFractionDigits: 2})}`;
+      document.getElementById('res-total-allocated').textContent = `₹${Number(data.total_allocated || 0).toLocaleString('en-IN', {minimumFractionDigits: 2})}`;
+      document.getElementById('res-remaining-budget').textContent = `₹${Number(data.remaining_budget || 0).toLocaleString('en-IN', {minimumFractionDigits: 2})}`;
+
+      const catContainer = document.getElementById('res-party-categories-container');
+      catContainer.innerHTML = '';
+
+      const catIcons = {
+        venue: 'fa-building',
+        catering: 'fa-utensils',
+        food: 'fa-hamburger',
+        drinks: 'fa-cocktail',
+        decoration: 'fa-magic',
+        entertainment: 'fa-music',
+        contingency: 'fa-shield-alt'
+      };
+
+      (data.budget_breakdown || []).forEach(cat => {
+        const catKey = (cat.category || 'misc').toLowerCase();
+        const iconClass = catIcons[catKey] || 'fa-tag';
+        const formattedTitle = (cat.category || 'General').replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase());
+
+        let itemsRows = '';
+        (cat.items || []).forEach(item => {
+          const links = item.shopping_links || {};
+          let linkButtons = '';
+
+          // Render appropriate store / vendor links
+          for (const [store, url] of Object.entries(links)) {
+            let icon = 'fa-external-link-alt';
+            let label = store.charAt(0).toUpperCase() + store.slice(1);
+            if (store === 'amazon') { icon = 'fab fa-amazon'; }
+            else if (store === 'flipkart') { icon = 'fas fa-shopping-bag'; }
+            else if (store === 'swiggy') { icon = 'fas fa-utensils'; }
+            else if (store === 'zomato') { icon = 'fas fa-pizza-slice'; }
+            else if (store === 'bigbasket') { icon = 'fas fa-shopping-basket'; }
+            else if (store === 'bookmyshow') { icon = 'fas fa-film'; }
+            else if (store === 'makemytrip') { icon = 'fas fa-plane'; }
+            else if (store === 'oyorooms') { icon = 'fas fa-hotel'; label = 'OYO'; }
+            else if (store === 'nobroker') { icon = 'fas fa-building'; label = 'NoBroker'; }
+            else if (store === 'meesho') { icon = 'fas fa-tag'; }
+            else if (store === 'myntra') { icon = 'fas fa-tshirt'; }
+            else if (store === 'google') { icon = 'fab fa-google'; }
+            else if (store === 'booking') { icon = 'fas fa-bed'; label = 'Booking.com'; }
+
+            linkButtons += `<a href="${url}" target="_blank" class="store-btn ${store}"><i class="${icon}"></i> ${label}</a>`;
+          }
+
+          itemsRows += `
+            <tr>
+              <td style="width: 25%;">
+                <div class="item-name">${item.name}</div>
+              </td>
+              <td style="width: 35%;">
+                <div class="item-desc">${item.description || ''}</div>
+              </td>
+              <td style="width: 12%;">
+                <div class="item-price">₹${Number(item.estimated_price || 0).toLocaleString('en-IN')}</div>
+              </td>
+              <td style="width: 8%; text-align: center; font-weight: 600;">
+                ${item.quantity || 1}
+              </td>
+              <td style="width: 20%;">
+                <div class="shopping-links-cluster">${linkButtons || '<span style="color:#94a3b8;font-size:0.8rem;">Direct Vendor</span>'}</div>
+              </td>
+            </tr>
+          `;
+        });
+
+        const card = document.createElement('div');
+        card.className = 'category-card';
+        card.innerHTML = `
+          <div class="category-header">
+            <div class="category-title">
+              <i class="fas ${iconClass}" style="color: var(--accent-blue);"></i> ${formattedTitle}
+            </div>
+            <div class="category-allocation-badge">₹${Number(cat.allocation || 0).toLocaleString('en-IN')}</div>
+          </div>
+          <div class="data-table-wrapper">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Item / Service</th>
+                  <th>Description</th>
+                  <th>Est. Cost</th>
+                  <th style="text-align: center;">Qty</th>
+                  <th>Vendor & Shopping Links</th>
+                </tr>
+              </thead>
+              <tbody>${itemsRows}</tbody>
+            </table>
+          </div>
+        `;
+        catContainer.appendChild(card);
+      });
+
+      // Venue Suggestions
+      const venueCard = document.getElementById('venue-suggestions-card');
+      const venueList = document.getElementById('res-venues-list');
+      venueList.innerHTML = '';
+      if (data.venue_suggestions && data.venue_suggestions.length > 0) {
+        venueCard.style.display = 'block';
+        data.venue_suggestions.forEach(v => {
+          let vLinks = '';
+          const sLinks = v.search_links || {};
+          if (sLinks.google) vLinks += `<a href="${sLinks.google}" target="_blank" class="store-btn google"><i class="fab fa-google"></i> Google Maps</a>`;
+          if (sLinks.makemytrip) vLinks += `<a href="${sLinks.makemytrip}" target="_blank" class="store-btn makemytrip"><i class="fas fa-hotel"></i> MakeMyTrip</a>`;
+          if (sLinks.oyorooms) vLinks += `<a href="${sLinks.oyorooms}" target="_blank" class="store-btn oyorooms"><i class="fas fa-bed"></i> OYO Rooms</a>`;
+          if (sLinks.nobroker) vLinks += `<a href="${sLinks.nobroker}" target="_blank" class="store-btn nobroker"><i class="fas fa-building"></i> NoBroker</a>`;
+
+          const row = document.createElement('div');
+          row.style.cssText = 'padding: 1rem; background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); margin-bottom: 0.75rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;';
+          row.innerHTML = `
+            <div>
+              <div style="font-weight: 700; color: var(--primary-navy); font-size: 1.05rem;">${v.name}</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+                Type: <strong>${v.type || 'Custom'}</strong> &bull; Capacity: <strong>${v.capacity || 'Any'} guests</strong> &bull; Est: <strong>₹${Number(v.estimated_cost || 0).toLocaleString('en-IN')}</strong>
+              </div>
+            </div>
+            <div class="shopping-links-cluster">${vLinks}</div>
+          `;
+          venueList.appendChild(row);
+        });
+      } else {
+        venueCard.style.display = 'none';
+      }
+
+      // Calculation Table
+      const calcTbody = document.getElementById('res-calc-tbody');
+      calcTbody.innerHTML = '';
+      (data.calculation_table_inr || []).forEach(row => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td style="font-weight: 600; color: var(--primary-navy);">${row.category}</td>
+          <td>${row.items_count}</td>
+          <td style="font-weight: 700; color: var(--accent-blue);">₹${Number(row.total_cost || 0).toLocaleString('en-IN')}</td>
+          <td>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <div style="flex: 1; background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden;">
+                <div style="width: ${Math.min(100, row.percentage_of_budget || 0)}%; background: #c026d3; height: 100%;"></div>
+              </div>
+              <span style="font-weight: 700; font-size: 0.85rem; min-width: 45px;">${row.percentage_of_budget || 0}%</span>
+            </div>
+          </td>
+        `;
+        calcTbody.appendChild(tr);
+      });
+
+      // Tips List
+      const tipsList = document.getElementById('res-tips-list');
+      tipsList.innerHTML = '';
+      (data.additional_suggestions || []).forEach(tip => {
+        const li = document.createElement('li');
+        li.textContent = tip;
+        tipsList.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>

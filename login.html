@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - PocketSmart AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body style="background: #f1f5f9;">
+
+  <!-- Simple Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+        <span>Pocket<span class="brand-accent">Smart</span></span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="/register" class="btn-nav-primary"><i class="fas fa-user-plus"></i> Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Auth Box -->
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="brand-logo" style="justify-content: center; color: var(--primary-navy); margin-bottom: 0.25rem;">
+          <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+          <span>Pocket<span style="color: var(--accent-blue);">Smart</span></span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">AI-Powered Budget Planning</p>
+        <h2 class="auth-title">Welcome Back</h2>
+      </div>
+
+      {% if error %}
+        <div style="background-color: #fee2e2; border: 1px solid #fecaca; color: #dc2626; padding: 0.75rem 1rem; border-radius: var(--radius-md); font-size: 0.88rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;" id="login-error-alert">
+          <i class="fas fa-exclamation-circle"></i>
+          <span>{{ error }}</span>
+        </div>
+      {% endif %}
+
+      <form action="/login" method="POST" id="login-form">
+        <div class="form-group">
+          <label class="form-label" for="username">Username</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user input-icon"></i>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required autofocus value="demo">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+            <label class="form-label" for="password" style="margin-bottom: 0;">Password</label>
+            <a href="#" style="font-size: 0.82rem; color: var(--accent-blue); font-weight: 500;">Forgot Password?</a>
+          </div>
+          <div class="input-with-icon">
+            <i class="fas fa-lock input-icon"></i>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required value="demo123">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn-submit-login" style="margin-top: 1.5rem;">
+          Sign In <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <div style="text-align: center; margin-top: 1.75rem; font-size: 0.92rem; color: var(--text-muted);">
+        Don't have an account? <a href="/register" style="color: var(--accent-blue); font-weight: 600;" id="link-goto-register">Create Account</a>
+      </div>
+
+      <div style="margin-top: 1.5rem; padding: 0.75rem; background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: var(--radius-md); font-size: 0.82rem; color: #64748b; text-align: center;">
+        <i class="fas fa-info-circle" style="color: var(--accent-blue);"></i> Quick Demo credentials: <strong>demo</strong> / <strong>demo123</strong>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

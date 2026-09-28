@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendation History - PocketSmart AI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/dashboard" class="brand-logo" id="nav-brand-logo">
+        <div class="brand-icon"><i class="fas fa-wallet"></i></div>
+        <span>Pocket<span class="brand-accent">Smart</span></span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/dashboard"><i class="fas fa-columns"></i> Dashboard</a></li>
+        <li class="nav-item"><a href="/home-planner"><i class="fas fa-home"></i> Home Planner</a></li>
+        <li class="nav-item"><a href="/party-planner"><i class="fas fa-glass-cheers"></i> Party Planner</a></li>
+        <li class="nav-item"><a href="/jewelry-planner"><i class="fas fa-gem"></i> Jewelry Planner</a></li>
+        <li class="nav-item active"><a href="/history"><i class="fas fa-history"></i> History</a></li>
+        <li class="nav-item"><a href="/logout" class="btn-nav-primary"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="container">
+    <div class="planner-page-header">
+      <h1 class="planner-page-title">Your Recommendation History</h1>
+      <p class="planner-page-subtitle">View and manage all your previous budget plans and recommendations</p>
+    </div>
+
+    <!-- History Cards Grid -->
+    <div style="margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <h3 style="font-family: var(--font-heading); color: var(--primary-navy); font-size: 1.4rem; display: flex; align-items: center; gap: 0.5rem;">
+        <i class="fas fa-history" style="color: var(--accent-blue);"></i> Recent Recommendations
+      </h3>
+      <span style="font-size: 0.9rem; color: var(--text-muted);">
+        Total Saved Plans: <strong>{{ history|length }}</strong>
+      </span>
+    </div>
+
+    {% if history and history|length > 0 %}
+      <div class="history-grid" id="history-grid">
+        {% for item in history %}
+          <div class="history-card" id="card-{{ item.id }}">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <div style="width: 32px; height: 32px; border-radius: 6px; display: flex; align-items: center; justify-content: center;
+                  {% if item.recommendation_type == 'home' %}background: #e0f2fe; color: #0284c7;
+                  {% elif item.recommendation_type == 'party' %}background: #fce7f3; color: #be185d;
+                  {% else %}background: #ecfdf5; color: #047857;{% endif %}">
+                  {% if item.recommendation_type == 'home' %}<i class="fas fa-home"></i>
+                  {% elif item.recommendation_type == 'party' %}<i class="fas fa-glass-cheers"></i>
+                  {% else %}<i class="fas fa-gem"></i>{% endif %}
+                </div>
+                <div>
+                  <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--primary-navy);">
+                    {{ item.recommendation_type|title }} Budget
+                  </h4>
+                </div>
+              </div>
+              <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500;">
+                {{ item.timestamp }}
+              </span>
+            </div>
+
+            <!-- Stats -->
+            <div style="display: flex; justify-content: space-between; background: #f8fafc; padding: 0.75rem 1rem; border-radius: var(--radius-md); margin-bottom: 1rem; border: 1px solid var(--border-color);">
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Total Budget</div>
+                <div style="font-weight: 700; color: var(--primary-navy); font-size: 1.15rem;">₹{{ "{:,.0f}".format(item.budget) }}</div>
+              </div>
+              <div style="text-align: right;">
+                <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Remaining</div>
+                <div style="font-weight: 700; color: #059669; font-size: 1.15rem;">₹{{ "{:,.0f}".format(item.remaining) }}</div>
+              </div>
+            </div>
+
+            <!-- Summary Details -->
+            <div style="font-size: 0.88rem; color: #475569; margin-bottom: 1.25rem; line-height: 1.4; flex: 1;">
+              {{ item.input_summary }}
+            </div>
+
+            <!-- Actions -->
+            <div style="display: flex; gap: 0.5rem;">
+              <button onclick="openDetailsModal('{{ item.id }}')" class="btn btn-primary btn-block" style="padding: 0.5rem 1rem; font-size: 0.88rem;" id="btn-view-{{ item.id }}">
+                <i class="fas fa-eye"></i> View Full Details
+              </button>
+              <button onclick="deletePlan('{{ item.id }}')" class="btn btn-secondary" style="background: #fee2e2; color: #dc2626; border-color: #fecaca; padding: 0.5rem 0.75rem;" title="Delete Plan">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div style="text-align: center; padding: 4rem 2rem; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+        <i class="fas fa-folder-open" style="font-size: 3rem; color: #cbd5e1; margin-bottom: 1rem;"></i>
+        <h3 style="color: var(--primary-navy); font-weight: 700;">No recommendations saved yet</h3>
+        <p style="color: var(--text-muted); max-width: 480px; margin: 0.5rem auto 1.5rem;">
+          Generate budget plans in the Home, Party, or Jewelry planners and they will automatically appear here for review and shopping.
+        </p>
+        <a href="/home-planner" class="btn btn-primary">
+          <i class="fas fa-magic"></i> Try a Planner Now
+        </a>
+      </div>
+    {% endif %}
+
+    <!-- Modal for Detailed View -->
+    <div class="modal-overlay" id="details-modal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeDetailsModal()">&times;</button>
+        <div id="modal-body">
+          <div style="text-align: center; padding: 2rem;">
+            <div class="spinner"></div>
+            <p>Loading plan details...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bottom" style="border-top: none; padding-top: 0; text-align: center; justify-content: center;">
+      <p>© 2026 PocketSmart AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    async function openDetailsModal(id) {
+      const modal = document.getElementById('details-modal');
+      const modalBody = document.getElementById('modal-body');
+      modal.style.display = 'flex';
+      modalBody.innerHTML = `
+        <div style="text-align: center; padding: 2rem;">
+          <div class="spinner"></div>
+          <p>Loading plan breakdown...</p>
+        </div>
+      `;
+
+      try {
+        const response = await fetch(`/recommendation-details/${id}`);
+        if (!response.ok) throw new Error('Could not load plan details');
+        const data = await response.json();
+        renderModalContent(data);
+      } catch (err) {
+        modalBody.innerHTML = `
+          <div style="color: #dc2626; padding: 2rem; text-align: center;">
+            <i class="fas fa-exclamation-triangle" style="font-size: 2rem; margin-bottom: 0.5rem;"></i>
+            <p>${err.message}</p>
+          </div>
+        `;
+      }
+    }
+
+    function closeDetailsModal() {
+      document.getElementById('details-modal').style.display = 'none';
+    }
+
+    // Close modal on click outside
+    document.getElementById('details-modal').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeDetailsModal();
+    });
+
+    async function deletePlan(id) {
+      if (!confirm('Are you sure you want to delete this plan from history?')) return;
+      try {
+        const response = await fetch(`/recommendation-delete/${id}`, { method: 'DELETE' });
+        if (response.ok) {
+          const card = document.getElementById(`card-${id}`);
+          if (card) card.remove();
+        } else {
+          alert('Failed to delete recommendation.');
+        }
+      } catch (err) {
+        alert('Error: ' + err.message);
+      }
+    }
+
+    function renderModalContent(plan) {
+      const modalBody = document.getElementById('modal-body');
+      const res = plan.full_result || {};
+      const type = plan.type || 'Plan';
+
+      let itemsHtml = '';
+
+      if (type === 'home') {
+        (res.budget_breakdown || []).forEach(cat => {
+          let rows = '';
+          (cat.items || []).forEach(item => {
+            let links = '';
+            for (const [store, url] of Object.entries(item.shopping_links || {})) {
+              links += `<a href="${url}" target="_blank" class="store-btn ${store}" style="font-size: 0.72rem; padding: 0.2rem 0.5rem;">${store}</a> `;
+            }
+            rows += `
+              <tr>
+                <td><strong>${item.name}</strong><div style="font-size:0.8rem; color:#64748b;">${item.description || ''}</div></td>
+                <td>₹${Number(item.estimated_price || 0).toLocaleString('en-IN')}</td>
+                <td>${item.quantity || 1}</td>
+                <td><div class="shopping-links-cluster">${links}</div></td>
+              </tr>
+            `;
+          });
+          itemsHtml += `
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem; text-transform: capitalize;">${cat.category.replace('_', ' ')} (₹${Number(cat.allocation || 0).toLocaleString('en-IN')})</h4>
+              <div class="data-table-wrapper">
+                <table class="data-table">
+                  <thead><tr><th>Item</th><th>Est. Price</th><th>Qty</th><th>Shopping Links</th></tr></thead>
+                  <tbody>${rows}</tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        });
+      } else if (type === 'party') {
+        (res.budget_breakdown || []).forEach(cat => {
+          let rows = '';
+          (cat.items || []).forEach(item => {
+            let links = '';
+            for (const [store, url] of Object.entries(item.shopping_links || {})) {
+              links += `<a href="${url}" target="_blank" class="store-btn ${store}" style="font-size: 0.72rem; padding: 0.2rem 0.5rem;">${store}</a> `;
+            }
+            rows += `
+              <tr>
+                <td><strong>${item.name}</strong><div style="font-size:0.8rem; color:#64748b;">${item.description || ''}</div></td>
+                <td>₹${Number(item.estimated_price || 0).toLocaleString('en-IN')}</td>
+                <td>${item.quantity || 1}</td>
+                <td><div class="shopping-links-cluster">${links}</div></td>
+              </tr>
+            `;
+          });
+          itemsHtml += `
+            <div style="margin-bottom: 1.5rem;">
+              <h4 style="color: var(--primary-navy); margin-bottom: 0.5rem; text-transform: capitalize;">${cat.category.replace('_', ' ')} (₹${Number(cat.allocation || 0).toLocaleString('en-IN')})</h4>
+              <div class="data-table-wrapper">
+                <table class="data-table">
+                  <thead><tr><th>Item/Service</th><th>Est. Cost</th><th>Qty</th><th>Vendor Links</th></tr></thead>
+                  <tbody>${rows}</tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        });
+      } else {
+        // Jewelry
+        let rows = '';
+        (res.jewelry_recommendations || []).forEach(item => {
+          let links = '';
+          for (const [store, url] of Object.entries(item.shopping_links || {})) {
+            links += `<a href="${url}" target="_blank" class="store-btn ${store}" style="font-size: 0.72rem; padding: 0.2rem 0.5rem;">${store}</a> `;
+          }
+          rows += `
+            <div style="padding: 1rem; background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-md); margin-bottom: 0.75rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem;">
+                <strong style="color: var(--primary-navy); font-size: 1.05rem;">${item.item_type || 'Jewelry'}</strong>
+                <span style="font-weight: 700; color: var(--accent-blue);">₹${Number(item.estimated_price || 0).toLocaleString('en-IN')}</span>
+              </div>
+              <p style="font-size: 0.88rem; color: #475569; margin-bottom: 0.5rem;">${item.description || ''}</p>
+              <div class="shopping-links-cluster">${links}</div>
+            </div>
+          `;
+        });
+        itemsHtml = rows;
+      }
+
+      modalBody.innerHTML = `
+        <div style="margin-bottom: 1.5rem;">
+          <span class="history-type-badge history-type-${type}">${type} Plan</span>
+          <h2 style="font-family: var(--font-heading); color: var(--primary-navy); margin-top: 0.4rem;">${plan.input || 'Plan Breakdown'}</h2>
+          <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">Generated on ${plan.timestamp}</div>
+        </div>
+
+        <div class="budget-summary-card" style="padding: 1.25rem; margin-bottom: 1.5rem;">
+          <div class="summary-stat">
+            <div class="summary-label">Budget</div>
+            <div class="summary-value text-blue" style="font-size: 1.5rem;">₹${Number(res.total_budget || 0).toLocaleString('en-IN')}</div>
+          </div>
+          <div class="summary-stat">
+            <div class="summary-label">Spent</div>
+            <div class="summary-value text-amber" style="font-size: 1.5rem;">₹${Number(res.total_spent || res.total_allocated || 0).toLocaleString('en-IN')}</div>
+          </div>
+          <div class="summary-stat">
+            <div class="summary-label">Remaining</div>
+            <div class="summary-value text-green" style="font-size: 1.5rem;">₹${Number(res.remaining_budget || 0).toLocaleString('en-IN')}</div>
+          </div>
+        </div>
+
+        <div>${itemsHtml}</div>
+      `;
+    }
+  </script>
+</body>
+</html>
